@@ -5,7 +5,7 @@ Upload an app from the local repository into a remote repository.
 # Usage
 
 ```
-vorteil repositories pull PULLABLE <BUCKET> <APP> [flags]
+vorteil repositories pull PULLABLE BUCKET APP [flags]
 ```
 
 ## Options
