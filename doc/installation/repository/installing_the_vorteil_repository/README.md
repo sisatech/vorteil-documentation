@@ -49,7 +49,7 @@ URL: http://localhost:7472/graphql
 Method: POST
 
 mutation {
-        applyACLRule(id:"<RepositorySingletonID>", action:"READ", group:"testGroup"){
+        applyACLRule(id:string", action:"READ", group:"testGroup"){
                 id
         }
 }
@@ -105,7 +105,7 @@ URL: http://localhost:7472/graphql
 Method: POST
 
 mutation {
-        applyACLRule(id:"<IDENTIFIER>", action:"READ", group:"testGroup"){
+        applyACLRule(id:string, action:"READ", group:"testGroup"){
                 id
         }
 }
