@@ -1,2 +1,2 @@
 # Graphql
-To find out how to use our Graphql APIs please visit [marketplace.vorteil.io/graphql](https://marketplace.vorteil.io/graphql) alternatively the local hosted daemon at [localhost:7472/graphql](localhost:7472/graphql). The Graphql queries may contain objects that required using a REST request for a different objective. A detailed description on how to use the apis can be [found here](../rest/README.md).
+To find out how to use our Graphql APIs please visit [marketplace.vorteil.io/graphql](https://marketplace.vorteil.io/graphql) alternatively the local hosted daemon at [localhost:7472/graphql](http://localhost:7472/graphql).
