@@ -1,4 +1,4 @@
-### Amazon Web Services
+# Amazon Web Services
     Platform        | The name the studio will refer to the platform by.
     Bucket          | The bucket on Amazon that the disk will be uploaded to.
     Instance/Region | The region where you want to host the virtual machine.

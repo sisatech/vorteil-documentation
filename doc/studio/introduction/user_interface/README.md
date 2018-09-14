@@ -1,4 +1,4 @@
-## User Interface
+# User Interface
 
 ![Colour Coded view of the interface](https://storage.googleapis.com/vorteil-dl/assets/documentation/highlightedview.png "User Interface Screenshot")
 
