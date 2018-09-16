@@ -14,4 +14,4 @@ Add a new platform to the server.
 * [platforms_new_vmware-player](../platforms_new_vmware-player)	 - Add a new platform using VMware Player
 * [platforms_new_vmware-workstation](../platforms_new_vmware-workstation)	 - Add a new platform using VMware Workstation
 
-###### Auto generated for CLI 2.0.0-2ffceded-dirty on 14-Sep-2018
+###### Auto generated for CLI 2.0.0-7169db7d-dirty on 14-Sep-2018

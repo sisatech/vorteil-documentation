@@ -1,4 +1,4 @@
-### Google Cloud Platform
+# Google Cloud Platform
     Platform    | The name the studio will refer to the platform by.
     Bucket      | The bucket on google that the disk will be uploaded to.
     Instance    | The region where you want to host the virtual machine.

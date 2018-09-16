@@ -30,4 +30,4 @@ vorteil settings platforms new vmware-player NAME [flags]
 
 * [vorteil settings platforms new](../platforms_new)	 - Add a new platform to the server
 
-###### Auto generated for CLI 2.0.0-2ffceded-dirty on 14-Sep-2018
+###### Auto generated for CLI 2.0.0-7169db7d-dirty on 14-Sep-2018

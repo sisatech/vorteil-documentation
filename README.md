@@ -65,3 +65,8 @@ attachment.
 The tools we use to sync these docs with the kayako portal currently have 
 issues whenever the markdown files contain something that can be misinterpreted 
 as HTML. Avoid using the following characters where possible for now: <>&.
+
+# Validation 
+
+Use the kayako tool in this projec to validate your contributions to the 
+documentation. 

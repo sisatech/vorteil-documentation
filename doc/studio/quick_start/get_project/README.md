@@ -1,4 +1,4 @@
-## Get a Project
+# Get a Project
 The best way to get a project to use on the Developer Studo would be to add the repository Marketplace which contains a 'helloworld' application.
 
 Via the actions panel there will be a '+' icon which pops open a modal which displays a repository form like the one below. 

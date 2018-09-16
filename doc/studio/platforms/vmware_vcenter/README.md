@@ -1,4 +1,4 @@
-#### vCenter
+# vCenter
 
     Platform    | The name the studio will refer to the platform by.
     Address     | The address that the vCenter server is currently running from.

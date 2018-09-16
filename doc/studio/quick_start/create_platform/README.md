@@ -1,4 +1,4 @@
-## Create a platform
+# Create a platform
 
 Now to run this application using the vorteil kernel. We will need to create a platform. The platform we will be creating will be for the Virtualbox hypervisor.
 

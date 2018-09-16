@@ -30,4 +30,4 @@ info, about, inspect, summary
 ```
 
 
-###### Auto generated for CLI 2.0.0-2ffceded-dirty on 14-Sep-2018
+###### Auto generated for CLI 2.0.0-7169db7d-dirty on 14-Sep-2018
