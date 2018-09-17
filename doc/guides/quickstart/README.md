@@ -1,3 +1,1 @@
-# Quickstart
-
-Quickstart
+# Quick start guide

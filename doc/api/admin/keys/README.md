@@ -1,4 +1,4 @@
-## Admin
+# Admin
 The default port for the admin server is normally 7471.
 ### /api/keys
 #### GET
