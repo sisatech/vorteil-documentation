@@ -13,4 +13,4 @@ consuming disk space or downloading kernel files in advance of expected use.
 * [kernels_list](../kernels_list)	 - List kernel versions
 * [kernels_update](../kernels_update)	 - Set the default to the most recent kernel
 
-###### Auto generated for CLI 2.0.0-7169db7d-dirty on 14-Sep-2018
+###### Auto generated for CLI 2.0.0-7169db7d-dirty on 17-Sep-2018

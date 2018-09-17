@@ -39,4 +39,4 @@ amazon, amazon-web-services, ec2
 
 * [vorteil settings platforms new](../platforms_new)	 - Add a new platform to the server
 
-###### Auto generated for CLI 2.0.0-7169db7d-dirty on 14-Sep-2018
+###### Auto generated for CLI 2.0.0-7169db7d-dirty on 17-Sep-2018

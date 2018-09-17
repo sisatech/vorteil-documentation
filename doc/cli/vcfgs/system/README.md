@@ -8,14 +8,16 @@ outline the options available here.
 Here is the skeleton of the system configuration, as well as the associated
 flags to change these values directly from the commandline.
 
-[system]
-delay = ""			→	--system.delay=""
-disk-cache = ""		→	--system.disk-cache=""
-dns = []			→	--system.dns="" 	(repeatable)
-hostname = "" 		→	--system.hostname=""
-max-fds = 0 		→	--system.max-fds=0
-output-mode = ""		→	--system.output-mode=""
-output-format = ""		→	--system.output-format=""
+```
+  [system]
+    delay = ""			→	--system.delay=""
+    disk-cache = ""		→	--system.disk-cache=""
+    dns = []			→	--system.dns="" 	(repeatable)
+    hostname = "" 		→	--system.hostname=""
+    max-fds = 0 		→	--system.max-fds=0
+    output-mode = ""		→	--system.output-mode=""
+    output-format = ""		→	--system.output-format=""
+```
 
 ## Delay:
 
@@ -88,20 +90,25 @@ expand in the future.
 
 ## Example:
 
-[system]
-delay = "0s"
-disk-cache = "20mb"
-dns = ["1.1.1.1", "1.0.0.1"]
-hostname = "vapp"
-max-fds = 1024
-output-mode = "standard"
-output-format = "standard"
+```
+  [system]
+    delay = "0s"
+    disk-cache = "20mb"
+    dns = ["1.1.1.1", "1.0.0.1"]
+    hostname = "vapp"
+    max-fds = 1024
+    output-mode = "standard"
+    output-format = "standard"
+```
 
 ### which is equivalent to:
 
---system.delay=0s --system.disk-cache=20mb --system.dns=1.1.1.1 \
---system.dns=1.0.0.1 --system.hostname=vapp --system.max-fds=1024 \
---system.output-mode="both" --system.output-format="default"
+```
+  --system.delay=0s --system.disk-cache=20mb --system.dns=1.1.1.1 \
+  --system.dns=1.0.0.1 --system.hostname=vapp --system.max-fds=1024 \
+  --system.output-mode="both" --system.output-format="default"
+```
 
 
-###### Auto generated for CLI 2.0.0-7169db7d-dirty on 14-Sep-2018
+
+###### Auto generated for CLI 2.0.0-7169db7d-dirty on 17-Sep-2018

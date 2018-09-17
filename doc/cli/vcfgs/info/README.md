@@ -9,14 +9,16 @@ for the app itself.
 Here is the skeleton of the "info" configuration, as well as the associated
 flags to change these values directly from the commandline.
 
-[info]
-name = ""   		→	--info.name=""
-author = ""	  	        →	--info.author=""
-summary = ""		→	--info.summary=""
-description = "" 		→	--info.description=""
-url = ""			→	--info.url=""
-date = ""			→	--info.date=""
-version = ""		→	--info.version=""
+```
+  [info]
+    name = ""   		→	--info.name=""
+    author = ""	  	        →	--info.author=""
+    summary = ""		→	--info.summary=""
+    description = "" 		→	--info.description=""
+    url = ""			→	--info.url=""
+    date = ""			→	--info.date=""
+    version = ""		→	--info.version=""
+```
 
 By convention, if the application is a powerful general purpose app like a
 database server then fields in the information section should describe the
@@ -39,22 +41,27 @@ double-quotes. i.e. """Like this"""
 
 ## Example:
 
-[info]
-name = "My App"
-author = "Sisa-Tech Pty Ltd"
-summary = "My short blurb description."
-description = "My much longer documentation description."
-url = "vorteil.io"
-date = "2018-05-16T08:28:06.801064-04:00"
-version = "1.0.0"
+```
+  [info]
+    name = "My App"
+    author = "Sisa-Tech Pty Ltd"
+    summary = "My short blurb description."
+    description = "My much longer documentation description."
+    url = "vorteil.io"
+    date = "2018-05-16T08:28:06.801064-04:00"
+    version = "1.0.0"
+```
 
 ### which is equivalent to:
 
---info.name="My App" --info.author="Sisa-Tech Pty Ltd" \
---info.summary="My short blurb description." \
---info.description="My much longer documentation description." \
---info.url=vorteil.io --info.date="2018-05-16T08:28:06.801064-04:00" \
---info.version=1.0.0
+```
+  --info.name="My App" --info.author="Sisa-Tech Pty Ltd" \
+  --info.summary="My short blurb description." \
+  --info.description="My much longer documentation description." \
+  --info.url=vorteil.io --info.date="2018-05-16T08:28:06.801064-04:00" \
+  --info.version=1.0.0
+```
 
 
-###### Auto generated for CLI 2.0.0-7169db7d-dirty on 14-Sep-2018
+
+###### Auto generated for CLI 2.0.0-7169db7d-dirty on 17-Sep-2018

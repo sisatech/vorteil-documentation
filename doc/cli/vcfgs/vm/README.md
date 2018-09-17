@@ -9,12 +9,14 @@ section were used as-is.
 Here is the skeleton of a vm configuration, as well as the associated flags to
 change these values directly from the commandline.
 
-[vm]
-cpus = 0			→	--vm.cpus=0
-disk-size = ""		→	--vm.disk-size=""
-inodes = ""			→	--vm.inodes=""
-kernel = "" 		→	--vm.kernel=""
-ram = ""			→	--vm.ram=""
+```
+  [vm]
+    cpus = 0			→	--vm.cpus=0
+    disk-size = ""		→	--vm.disk-size=""
+    inodes = ""			→	--vm.inodes=""
+    kernel = "" 		→	--vm.kernel=""
+    ram = ""			→	--vm.ram=""
+```
 
 ## Virtual Hardware:
 
@@ -60,16 +62,21 @@ upgrade to the latest minor version and patch.
 
 ## Example:
 
-[vm]
-cpus = 1
-disk-size = "64mb"
-inodes = "1k"
-kernel = "0.3.0"
-ram = "128m"
+```
+  [vm]
+    cpus = 1
+    disk-size = "64mb"
+    inodes = "1k"
+    kernel = "0.3.0"
+    ram = "128m"
+```
 
 ### which is equivalent to:
 
---vm.cpus=1 --vm.disk-size=64mb --vm.inodes=1k --vm.kernel=0.3.0 --vm.ram=128m
+```
+  --vm.cpus=1 --vm.disk-size=64mb --vm.inodes=1k --vm.kernel=0.3.0 --vm.ram=128m
+```
 
 
-###### Auto generated for CLI 2.0.0-7169db7d-dirty on 14-Sep-2018
+
+###### Auto generated for CLI 2.0.0-7169db7d-dirty on 17-Sep-2018

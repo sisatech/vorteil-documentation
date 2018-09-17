@@ -31,13 +31,18 @@ care of this for you.
 
 ## Example:
 
-[redirects]
-stdout = "10.0.0.2:8000"
-"/logs" = "10.0.0.2:8001"
+```
+  [redirects]
+    stdout = "10.0.0.2:8000"
+    "/logs" = "10.0.0.2:8001"
+```
 
 ### which is equivalent to:
 
---redirects="stdout=10.0.0.2:8000" --redirects="/logs=10.0.0.2:8000"
+```
+  --redirects="stdout=10.0.0.2:8000" --redirects="/logs=10.0.0.2:8000"
+```
 
 
-###### Auto generated for CLI 2.0.0-7169db7d-dirty on 14-Sep-2018
+
+###### Auto generated for CLI 2.0.0-7169db7d-dirty on 17-Sep-2018
