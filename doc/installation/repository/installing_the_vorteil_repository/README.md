@@ -7,7 +7,7 @@ A standard Vorteil installation includes access to the Vorteil Repository, and c
 Run the installer and follow the prompts to complete the initial installation process.
 
 ## Configuring the Repository
-Having run the installer, you will already have a basic repository installed. Now it's time to configure the repository for other users to access. This will require the use of the [Admin API](../../../api/rest/admin). The Admin API endpoint is set to localhost:7471 by default; alternatively, [a lightweight web interface is provided](http://localhost:7471).
+Having run the installer, you will already have a basic repository installed. Now it's time to configure the repository for other users to access. This will require the use of the [Admin API](../../../api/admin/keys). The Admin API endpoint is set to localhost:7471 by default; alternatively, [a lightweight web interface is provided](http://localhost:7471).
 
 Let's create an authentication key for a new user/group.
 

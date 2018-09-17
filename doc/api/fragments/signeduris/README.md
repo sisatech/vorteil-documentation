@@ -1,4 +1,4 @@
-## Signed URIs
+# Signed URIs
 #### /api/signed/(signedString)
 Anything related to a Fragment object will contain a signed URL. These allow us to download any file. An easy way to find a signed url would be to send this Graphql request.
 

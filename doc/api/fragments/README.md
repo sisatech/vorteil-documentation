@@ -1,3 +1,2 @@
 # Fragments
-
-Fragments.
+Fragments are objects in the GraphQL APIs that are used in some rest requests. As Graphql doesn't provide the ability to upload, download. We've decided to use signed uri's. A signed uri is a hash that will timeout in the future. The signed uri can be used to POST and GET from depending on the context.
