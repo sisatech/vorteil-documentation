@@ -1,3 +1,3 @@
-# Structure
+# General      
 
-Structure
+General and miscellaneous information about Vorteil apps.
