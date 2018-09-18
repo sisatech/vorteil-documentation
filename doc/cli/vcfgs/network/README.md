@@ -14,16 +14,18 @@ Here is the skeleton of a network configuration, as well as the associated flags
 to change these values directly from the commandline. Assume that this skeleton
 represents the 0th network configuration:
 
-[[network]]
-ip = ""			→	--network.0.ip=""
-mask = ""			→	--network.0.mask=""
-gateway = ""		→	--network.0.gateway=""
-mtu = 0 			→	--network.0.mtu=0
-disable-tso = false 	→ 	--network.0.disable-tso=false
-udp = [] 			→	--network.0.udp="" 	(repeatable)
-tcp = []			→	--network.0.tcp="" 	(repeatable)
-http = []			→	--network.0.http="" 	(repeatable)
-https = []			→	--network.0.https="" 	(repeatable)
+```
+  [[network]]
+    ip = ""			→	--network.0.ip=""
+    mask = ""			→	--network.0.mask=""
+    gateway = ""		→	--network.0.gateway=""
+    mtu = 0 			→	--network.0.mtu=0
+    disable-tso = false 	→ 	--network.0.disable-tso=false
+    udp = [] 			→	--network.0.udp="" 	(repeatable)
+    tcp = []			→	--network.0.tcp="" 	(repeatable)
+    http = []			→	--network.0.http="" 	(repeatable)
+    https = []			→	--network.0.https="" 	(repeatable)
+```
 
 The most important parts of the network configuration are the ip, mask, and
 gateway fields. If the ip is left as an empty string or explicitly set to "dhcp"
@@ -62,23 +64,28 @@ cost elsewhere.
 
 ## Example:
 
-[[network]]
-ip = "10.0.0.2"
-mask = "255.255.255.0"
-gateway = "10.0.0.1"
-mtu = 1500
-disable-tcp-offload = false
-udp = []
-tcp = ["8000", "8080"]
-http = ["80"]
-https = []
+```
+  [[network]]
+    ip = "10.0.0.2"
+    mask = "255.255.255.0"
+    gateway = "10.0.0.1"
+    mtu = 1500
+    disable-tcp-offload = false
+    udp = []
+    tcp = ["8000", "8080"]
+    http = ["80"]
+    https = []
+```
 
 ### which is equivalent to:
 
---network.0.ip=10.0.0.2 --network.0.mask=255.255.255.0 \
---network.0.gateway=10.0.0.1 --network.0.mtu=1500 --network.0.udp="" \
---network.0.tcp="8000" --network.0.tcp="8080" --network.0.http="80" \
---network.0.https="" --network.0.disable-tcp-offload=false
+```
+  --network.0.ip=10.0.0.2 --network.0.mask=255.255.255.0 \
+  --network.0.gateway=10.0.0.1 --network.0.mtu=1500 --network.0.udp="" \
+  --network.0.tcp="8000" --network.0.tcp="8080" --network.0.http="80" \
+  --network.0.https="" --network.0.disable-tcp-offload=false
+```
 
 
-###### Auto generated for CLI 2.0.0-7169db7d-dirty on 14-Sep-2018
+
+###### Auto generated for CLI 2.0.0-7169db7d-dirty on 17-Sep-2018

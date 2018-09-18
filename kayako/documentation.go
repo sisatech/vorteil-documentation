@@ -34,7 +34,7 @@ func scan(path, backup string) error {
 		log.Info(fmt.Sprintf("Skipping backup."))
 	} else {
 		// scrape existing documentation as a backup
-		log.Info(fmt.Sprintf("Performing backup to: %s", path))
+		log.Info(fmt.Sprintf("Performing backup to: %s", backup))
 		err = scrape(backup)
 		if err != nil {
 			return err

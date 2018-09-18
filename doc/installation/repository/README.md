@@ -1,3 +1,3 @@
 # Repository
 
-Repository
+Configuring Vorteil repositories.

@@ -14,7 +14,7 @@ Programs compiled against dynamically linked libraries are not complete programs
 
 ### Add the missing linker
 
-Copy the missing linker onto the filesystem for the Vorteil app. If the error message says "can not find linker: /lib64/ld-linux-x86-64.so.2", then copy that file and [add it to your Vorteil app](../../../apps/structure/filesystem). Don't forget that you'll also need to copy the libraries that will be dynamically linked there as well, otherwise you will encounter [a different error](../../runtime_errors/missing_shared_object).
+Copy the missing linker onto the filesystem for the Vorteil app. If the error message says "can not find linker: /lib64/ld-linux-x86-64.so.2", then copy that file and [add it to your Vorteil app](../../../apps/general/filesystem). Don't forget that you'll also need to copy the libraries that will be dynamically linked there as well, otherwise you will encounter [a different error](../../runtime_errors/missing_shared_object).
 
 ### Statically compile the program
 

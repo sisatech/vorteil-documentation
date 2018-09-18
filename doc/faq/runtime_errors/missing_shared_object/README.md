@@ -14,4 +14,4 @@ The linker loaded by the kernel to perform the linking was not able to find one 
 
 ## Solution
 
-Copy the missing shared object onto the filesystem for the Vorteil app at an appropriate path. You need to determine the location of the missing file on your system then copy that file and [add it to your Vorteil app](../../../apps/structure/filesystem) so that it appears on the same absolute path on the app as it was on your Linux machine. For example, if you sourced "libc.so.6" from "/lib64/libc.so.6" on your Linux machine it must appear at "/lib64/libc.so.6" on your app.
+Copy the missing shared object onto the filesystem for the Vorteil app at an appropriate path. You need to determine the location of the missing file on your system then copy that file and [add it to your Vorteil app](../../../apps/general/filesystem) so that it appears on the same absolute path on the app as it was on your Linux machine. For example, if you sourced "libc.so.6" from "/lib64/libc.so.6" on your Linux machine it must appear at "/lib64/libc.so.6" on your app.

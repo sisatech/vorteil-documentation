@@ -12,11 +12,13 @@ its significance.
 Here is the skeleton of these fields, as well as the associated
 flags to change these values directly from the commandline.
 
-binary = ""
-args = ""
+```
+  binary = ""
+  args = ""
 
-[env]
-KEY=VALUE
+  [env]
+    KEY=VALUE
+```
 
 If the binary is provided as an absolute path then the zeroth argument to the
 application will be an absolute path, but otherwise the path will still be
@@ -33,17 +35,22 @@ sections.
 
 ## Example:
 
-binary = "/jdk1.8.0_172/bin/java"
-args = "arg1 arg2 arg3"
+```
+  binary = "/jdk1.8.0_172/bin/java"
+  args = "arg1 arg2 arg3"
 
-[env]
-HOME = "/root"
-X = "x"
+  [env]
+    HOME = "/root"
+    X = "x"
+```
 
 ### which is equivalent to:
 
---binary="/jdk1.8.0_172/bin/java" --args="arg1 arg2 arg3" \
---env="HOME=/root" --env="X=x"
+```
+  --binary="/jdk1.8.0_172/bin/java" --args="arg1 arg2 arg3" \
+  --env="HOME=/root" --env="X=x"
+```
 
 
-###### Auto generated for CLI 2.0.0-7169db7d-dirty on 14-Sep-2018
+
+###### Auto generated for CLI 2.0.0-7169db7d-dirty on 17-Sep-2018
