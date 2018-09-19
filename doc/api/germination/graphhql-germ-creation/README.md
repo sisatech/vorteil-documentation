@@ -1,5 +1,5 @@
 # Starting a germination
-The germinastion can be started by a sending Graphql request that resembles the request name. An example provided below for packing a project.
+The germination can be started by a sending Graphql request that resembles the request name. An example provided below for packing a project.
 
 	mutation{
 		pack(germ:"/home/sisatech/Documents/projects/helloworld"){
