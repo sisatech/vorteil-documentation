@@ -13,7 +13,7 @@ Vorteil will upload a compatible disk to the bucket provided during setup. An im
 For the setup process, users will require the following:
 
 - bucket name (as listed on Google Cloud Platform)
-- instance zone (created instances will be created in this zone)
+- instance zone (instances will be created in this zone)
 - network (as listed on Google Cloud Platform; created instances will be connected to this)
 - key file (.json service account key used to authorize/authenticate with Google Cloud Platform)
 
