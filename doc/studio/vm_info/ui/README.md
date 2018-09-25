@@ -5,12 +5,12 @@ Below you will find the Virtual machine tab open.
 ![Virtual Machine Information](https://storage.googleapis.com/vorteil-dl/assets/documentation/highlightedvm.png "Virtual Machine Information")
 
 This interface uses three tabs to separate a large amount of information provided. 
-
+```
     App            | #bd1213    | Red
     Button Toolbar | #80c6bf    | Teal
     Tabs           | #6e1e66    | Purple
     Info           | #afbb2e    | Yellow
-
+```
 
 ## Button Toolbar
 

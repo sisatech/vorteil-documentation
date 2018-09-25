@@ -19,5 +19,5 @@ For the API it is important to remember that a file-path should be an absolute p
 
 ## See Also 
 
-* [Starting a new package with the developer studio](../../../studio/projects/pack)
+* [Starting a new package with the developer studio](../../../studio/projects/new)
 * [Creating a new package manually](../creation)

@@ -11,10 +11,10 @@ The first area is the Default Settings. These settings will be used when the VCF
 Right now we are after the Platforms section to add a platform. Upon choosing virtualbox a new form should appear like the one below.
 
 ![VirtualBox](https://storage.googleapis.com/vorteil-dl/assets/documentation/vbox.png "Virtualbox Form")
-
+```
     Platform Name - what the daemon will refer to for provisioning
     Network Interface - used to work out whether its Bridged or NAT. Leave default for NAT or choose the device you want to run this on for bridged.
     Super Debug - Provides more provisioning logs to help debug why your virtual machine isn't running properly as it may be happening in a stage thats harder to correct.
     Headless - You can run most hypervisors in GUI or non GUI mode. The default is set to non GUI as the Developer Studio outputs the information on the virtual machine page.
-
+```
 After hitting Add Platform the new Platform Name should now appear in Existing Platforms below the section we added this platform. As you added the platform you may also adjust the default setting to use it. So whenever you hit Run on a project it will use the platform in the default settings.
