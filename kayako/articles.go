@@ -44,7 +44,22 @@ func (a *article) load() error {
 
 	a.loaded = true
 
-	data, err := ioutil.ReadFile(filepath.Join(a.path, "README.md"))
+	data, err := ioutil.ReadFile(filepath.Join(a.path, "KEYWORDS.md"))
+	if err == nil {
+		lines := strings.Split(string(data), "\n")
+		for i, line := range lines {
+			line = strings.TrimSpace(line)
+			if strings.ContainsAny(line, ",") {
+				return fmt.Errorf("article '%s' contains illegal character in a defined keyword: %s", a.path, line)
+			}
+			lines[i] = line
+		}
+		a.keywords = lines
+	} else {
+		a.keywords = make([]string, 0, 0)
+	}
+
+	data, err = ioutil.ReadFile(filepath.Join(a.path, "README.md"))
 	if err != nil {
 		log.Warn("Article has no README.md file")
 		data = []byte{}
@@ -167,7 +182,7 @@ func (a *article) draft() error {
 			Locale:      "en-us",
 			Translation: content,
 		}},
-		"keywords": strings.Join(a.keywords, ","),
+		"keywords": strings.Join(append(append(a.keywords, a.section.keywords...), a.section.category.keywords...), ","),
 		"status":   "DRAFT",
 	}
 
@@ -247,7 +262,7 @@ func (a *article) push() error {
 			Locale:      "en-us",
 			Translation: content,
 		}},
-		"keywords": strings.Join(a.keywords, ","),
+		"keywords": strings.Join(append(append(a.keywords, a.section.keywords...), a.section.category.keywords...), ","),
 		"status":   "PUBLISHED",
 		// TODO: files
 		// TODO: tags
@@ -423,11 +438,17 @@ func (a *article) resolveLink(old string) (string, error) {
 		}
 	}
 
-	if relative != 0 {
-		return "", fmt.Errorf("broken relative link doesn't point to another article: %s", old)
+	switch relative {
+	case 0:
+		return article.URL, nil
+	case -1:
+		return section.URL, nil
+	case -2:
+		return category.URL, nil
+	default:
+		panic(fmt.Errorf("broken relative link doesn't point to another object: %s", old))
 	}
 
-	return article.URL, nil
 }
 
 func (a *article) precheckLinks() error {

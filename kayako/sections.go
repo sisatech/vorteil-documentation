@@ -26,6 +26,7 @@ type section struct {
 	description string
 	loaded      bool
 	Articles    map[string]*article
+	keywords    []string
 }
 
 var updatedSections map[int]bool
@@ -43,7 +44,22 @@ func (s *section) load() error {
 
 	s.loaded = true
 
-	data, err := ioutil.ReadFile(filepath.Join(s.path, "README.md"))
+	data, err := ioutil.ReadFile(filepath.Join(s.path, "KEYWORDS.md"))
+	if err == nil {
+		lines := strings.Split(string(data), "\n")
+		for i, line := range lines {
+			line = strings.TrimSpace(line)
+			if strings.ContainsAny(line, ",") {
+				return fmt.Errorf("section '%s' contains illegal character in a defined keyword: %s", s.path, line)
+			}
+			lines[i] = line
+		}
+		s.keywords = lines
+	} else {
+		s.keywords = make([]string, 0, 0)
+	}
+
+	data, err = ioutil.ReadFile(filepath.Join(s.path, "README.md"))
 	if err != nil {
 		log.Warn("Category has no README.md file")
 		return nil

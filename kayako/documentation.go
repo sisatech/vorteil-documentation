@@ -5,7 +5,8 @@ import (
 )
 
 type documentation struct {
-	Categories map[string]*category
+	Categories  map[string]*category
+	latestOrder int
 }
 
 var model documentation
