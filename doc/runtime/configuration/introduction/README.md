@@ -17,5 +17,3 @@ of fields under the [info](../../../apps/vcfg/info) and
 [network](../../../apps/vcfg/network) sections, all of which are instead used 
 by tools to manage or describe apps from without.
 
-## See Also
-

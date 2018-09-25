@@ -1,3 +1,4 @@
-# Version
+# General and Miscellaneous
 
-View client and server version information
+Other general and miscellaneous topics about the CLI, including top-level only 
+commands. 
