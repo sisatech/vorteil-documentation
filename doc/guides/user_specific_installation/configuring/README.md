@@ -3,6 +3,8 @@ This guide details more specifically the components and configuration of a Vorte
 
 The guide details the steps required to configure the environment on a Linux machine, but the components and general principles of the process remain the same across all supported operating systems.
 
+**NOTE: a Vorteil installation on OSX already utilises per-user agents; all that is required to have Vorteil run independently per user is to configure the agents to use user-specific files and locations (daemon configuration file, cockroach store, etc).**
+
 ## Overview
 At a minimum, a functional Vorteil environment comprises of the DBMS and the Vorteil daemon. Currently, only CockroachDB is supported as a DBMS. There are 2 services that keep the Vorteil environment running (a default installation will automatically generate these and name them 'vorteil-cockroach' and 'vorteil-daemon', respectively).
 
