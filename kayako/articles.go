@@ -59,6 +59,8 @@ func (a *article) load() error {
 		a.keywords = make([]string, 0, 0)
 	}
 
+	log.Info(fmt.Sprintf("Keywords: %v", append(append(a.section.category.keywords, a.section.keywords...), a.keywords...)))
+
 	data, err = ioutil.ReadFile(filepath.Join(a.path, "README.md"))
 	if err != nil {
 		log.Warn("Article has no README.md file")
@@ -380,8 +382,16 @@ func (a *article) convertMarkdownToHTML() error {
 
 func precheckLinks() error {
 	for _, category := range model.Categories {
+		_, err := category.Description()
+		if err != nil {
+			return err
+		}
 		category.logger.Debug("Pre-checking links in category")
 		for _, section := range category.Sections {
+			_, err := section.Description()
+			if err != nil {
+				return err
+			}
 			section.logger.Debug("Pre-checking links in section")
 			for _, article := range section.Articles {
 				err := article.precheckLinks()
