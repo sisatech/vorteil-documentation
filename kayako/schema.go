@@ -150,7 +150,7 @@ type schemaArticle struct {
 	Titles      []resource `json:"titles"`
 	Slugs       []resource `json:"slugs"`
 	Contents    []resource `json:"contents"`
-	Keywords    []resource `json:"keywords"`
+	Keywords    string     `json:"keywords"`
 	Section     resource   `json:"section"`
 	Creator     resource   `json:"creator"`
 	Author      resource   `json:"author"`
