@@ -3,7 +3,10 @@
 Changelogs, feature pipelines, and other information related to the Studio's
 version.
 
-## 2.0.1
+## Relationships
+- [API: 0.1](../../api/0.1)
+
+## 2.0.1 (2018-09-26)
 - An issue with the projects tree on a large number of files on top level has been resolved.
 - Fixed Toast notifications to not be cut off or go off the screen while large amounts of data is shown.
 - Resolved an issue with middle mouse button closing unintended tabs.

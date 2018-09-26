@@ -59,6 +59,8 @@ func (s *section) load() error {
 		s.keywords = make([]string, 0, 0)
 	}
 
+	log.Info(fmt.Sprintf("Keywords: %v", append(s.category.keywords, s.keywords...)))
+
 	data, err = ioutil.ReadFile(filepath.Join(s.path, "README.md"))
 	if err != nil {
 		log.Warn("Category has no README.md file")

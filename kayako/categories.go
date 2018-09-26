@@ -8,6 +8,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"net/url"
+	"os"
 	"path/filepath"
 	"strconv"
 	"strings"
@@ -57,8 +58,13 @@ func (c *category) load() error {
 		}
 		c.keywords = lines
 	} else {
+		if !os.IsNotExist(err) {
+			return err
+		}
 		c.keywords = make([]string, 0, 0)
 	}
+
+	log.Info(fmt.Sprintf("Keywords: %v", c.keywords))
 
 	data, err = ioutil.ReadFile(filepath.Join(c.path, "README.md"))
 	if err != nil {
