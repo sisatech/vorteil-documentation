@@ -8,5 +8,5 @@ Additionally, the Vorteil ecosystem supports exporting applications to multiple 
 
 ## See Also
 - [Studio Platform Details](../../../studio/platforms)
-- [CLI Run Using Platforms](../../../studio/cli/general/run)
+- [CLI Run Using Platforms](../../../cli/general/run)
 - [Graphql API Help](../../../api/graphql/graphql)

@@ -9,6 +9,6 @@ When communicating with external repositories, all requests pass through the loc
 ## See Also
 - [Introduction to the Vorteil Repository (vRepo)](../../../repository/introduction/introduction_to_vrepo)
 - [Pushing and Pulling Applications](../../../repository/sharing/pushing_pulling_apps)
-- [Creating a Bucket](../../../repository/buckets/create_a_bucket)
+- [Creating a Bucket](../../../repository/buckets/creating_a_bucket)
 - [Applying ACL Rules to an Object](../../../repository/acls/applying_acl_rules)
 - [Granting Access to a Singleton Object](../../../repository/acls/granting_access_to_singleton) 

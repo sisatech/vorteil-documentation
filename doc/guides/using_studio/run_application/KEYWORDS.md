@@ -1,3 +1,0 @@
-run
-virtual
-virtual machine
