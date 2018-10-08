@@ -114,45 +114,62 @@ func (a *article) Content() (string, error) {
 	return a.content, nil
 }
 
-func (a *article) resolve() error {
+func (a *article) resolve(mf *Manifest) error {
 
 	log := a.logger
-	log.Debug("Resolving ID & URL")
 
-	url := fmt.Sprintf("https://vorteil.kayako.com/api/v1/articles.json?legacy_ids=%s", url.QueryEscape(a.LegacyID))
-	req, err := http.NewRequest(http.MethodGet, url, nil)
-	if err != nil {
-		return err
-	}
+	tuple, ok := mf.Articles[a.LegacyID]
+	if ok {
 
-	response, err := do(req)
-	if err != nil {
-		return err
-	}
-
-	switch response.Status {
-	case http.StatusOK:
-		info := new(schemaArticle)
-		err = convert(response.Data, info)
-		if err != nil {
-			panic(err)
-		}
-
-		a.ID = info.ID
-		a.URL = info.HelpCenterURL
+		log.Debug("ID & URL found in manifest file")
+		a.ID = tuple.ID
+		a.URL = tuple.URL
 		if a.URL == "" {
 			panic(errors.New("resource url is an empty string"))
 		}
 		log.Debug(fmt.Sprintf("Resolved ID: %v", a.ID))
 		log.Debug(fmt.Sprintf("Resolved URL: %s", a.URL))
-	case http.StatusNotFound:
-		err = a.draft()
+
+	} else {
+
+		log.Debug("Resolving ID & URL")
+
+		url := fmt.Sprintf("https://vorteil.kayako.com/api/v1/articles.json?legacy_ids=%s", url.QueryEscape(a.LegacyID))
+		req, err := http.NewRequest(http.MethodGet, url, nil)
 		if err != nil {
 			return err
 		}
-	default:
-		log.Debug(response.body)
-		return fmt.Errorf("unexpected response from server: status code %v", response.Status)
+
+		response, err := do(req)
+		if err != nil {
+			return err
+		}
+
+		switch response.Status {
+		case http.StatusOK:
+			info := new(schemaArticle)
+			err = convert(response.Data, info)
+			if err != nil {
+				panic(err)
+			}
+
+			a.ID = info.ID
+			a.URL = info.HelpCenterURL
+			if a.URL == "" {
+				panic(errors.New("resource url is an empty string"))
+			}
+			log.Debug(fmt.Sprintf("Resolved ID: %v", a.ID))
+			log.Debug(fmt.Sprintf("Resolved URL: %s", a.URL))
+		case http.StatusNotFound:
+			err = a.draft()
+			if err != nil {
+				return err
+			}
+		default:
+			log.Debug(response.body)
+			return fmt.Errorf("unexpected response from server: status code %v", response.Status)
+		}
+
 	}
 
 	return nil
@@ -340,10 +357,10 @@ func scanArticle(s *section, path string) error {
 	return nil
 }
 
-func resolveArticles(s *section) error {
+func resolveArticles(s *section, mf *Manifest) error {
 
 	for _, v := range s.Articles {
-		err := v.resolve()
+		err := v.resolve(mf)
 		if err != nil {
 			return err
 		}

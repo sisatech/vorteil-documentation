@@ -30,3 +30,8 @@ $ vorteil run ./helloworld:without-icon
 ```
 
 Tools within the Vorteil ecosystem also support linting existing '.vcfg' files within a project directory, providing useful feedback for troubleshooting configuration errors.
+
+## See Also
+- [For a more in-depth project explanation](../../../apps/projects/introduction/)
+- [Project Targets](../../../apps/projects/targets/)
+- [Ignore Targets](../../../apps/projects/ignore/)
