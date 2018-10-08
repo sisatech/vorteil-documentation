@@ -12,5 +12,5 @@ They provide the user a way to setup their hypervisor to run with certain settin
 
 ## See Also
 - [Studio Platform Details](../../../studio/platforms)
-- [CLI Run Using Platforms](../../../studio/cli/general/run)
+- [CLI Run Using Platforms](../../../cli/general/run)
 - [Graphql API Help](../../../api/graphql/graphql)
