@@ -42,3 +42,9 @@ ignore = [".vorteilproject", "app.png", "app.vcfg"]
 ```
 
 The API provides project linting help if you need to check why your project isn't running. Can give you helpful tips like the binary isn't specified in the VCFG file. The portability of our packages allows us to easily transfer entire application setups to different users without needing to sort dependencies out.
+
+
+## See Also
+- [For a more in-depth project explanation](../../../apps/projects/introduction/)
+- [Project Targets](../../../apps/projects/targets/)
+- [Ignore Targets](../../../apps/projects/ignore/)
