@@ -1,15 +1,11 @@
 # General Installation
 
-A guide to run you through the process of installing Vorteil onto your machine.
+How to perform a typical Vorteil installation.
 
 ## Get the Installer
 
-The installer can be found at [vorteil.io](http://vorteil.io). Upon getting the installer run it. The installer should go through some prompts on how you would like to install it and changes that you may need to make to it.
+Head to [vorteil.io](http://vorteil.io) and scroll down until the installer download links are visible. Click on the download link most appropriate to your operating system. Once the download is complete, run the installer with administrator privileges to continue. The installer will then guide users through the installation process.
 
 ## After Installing
 
-We recommend that you restart your computer for the changes to take effect. 
-
-## See Also 
-
-* [Installation Guides for Components](../../../installation)
+It is recommended that users restart their system following a fresh installation.  

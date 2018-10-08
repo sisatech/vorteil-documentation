@@ -15,10 +15,12 @@ import (
 var log = log15.Root()
 
 var sync bool
+var firstTime bool
 
 func main() {
 
 	cli.Flags().BoolVar(&sync, "sync", sync, "Sync documentation with Kayako")
+	cli.Flags().BoolVar(&firstTime, "first-time", firstTime, "Flag that must be provided to prevent an error when running without a manifest.json")
 
 	err := cli.Execute()
 	if err != nil {
@@ -51,7 +53,7 @@ and KAYAKO_PASS environment variables.`,
 		}
 
 		// scan documentation directory
-		err := scan(src, backup)
+		err := scan(src, backup, firstTime)
 		if err != nil {
 			log.Error(err.Error())
 			os.Exit(1)

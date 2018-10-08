@@ -112,48 +112,65 @@ func (s *section) Description() (string, error) {
 	return s.description, nil
 }
 
-func (s *section) resolve() error {
+func (s *section) resolve(mf *Manifest) error {
 
 	log := s.logger
-	log.Debug("Resolving ID & URL")
 
-	url := fmt.Sprintf("https://vorteil.kayako.com/api/v1/sections.json?legacy_ids=%s", url.QueryEscape(s.LegacyID))
-	req, err := http.NewRequest(http.MethodGet, url, nil)
-	if err != nil {
-		return err
-	}
+	tuple, ok := mf.Sections[s.LegacyID]
+	if ok {
 
-	response, err := do(req)
-	if err != nil {
-		return err
-	}
-
-	switch response.Status {
-	case http.StatusOK:
-		info := new(schemaSection)
-		err = convert(response.Data, info)
-		if err != nil {
-			panic(err)
-		}
-
-		s.ID = info.ID
-		s.URL = info.ResourceURL
+		log.Debug("ID & URL found in manifest file")
+		s.ID = tuple.ID
+		s.URL = tuple.URL
 		if s.URL == "" {
 			panic(errors.New("resource url is an empty string"))
 		}
 		log.Debug(fmt.Sprintf("Resolved ID: %v", s.ID))
 		log.Debug(fmt.Sprintf("Resolved URL: %s", s.URL))
-	case http.StatusNotFound:
-		err = s.draft()
+
+	} else {
+
+		log.Debug("Resolving ID & URL")
+
+		url := fmt.Sprintf("https://vorteil.kayako.com/api/v1/sections.json?legacy_ids=%s", url.QueryEscape(s.LegacyID))
+		req, err := http.NewRequest(http.MethodGet, url, nil)
 		if err != nil {
 			return err
 		}
-	default:
-		log.Debug(response.body)
-		return fmt.Errorf("unexpected response from server: status code %v", response.Status)
+
+		response, err := do(req)
+		if err != nil {
+			return err
+		}
+
+		switch response.Status {
+		case http.StatusOK:
+			info := new(schemaSection)
+			err = convert(response.Data, info)
+			if err != nil {
+				panic(err)
+			}
+
+			s.ID = info.ID
+			s.URL = info.ResourceURL
+			if s.URL == "" {
+				panic(errors.New("resource url is an empty string"))
+			}
+			log.Debug(fmt.Sprintf("Resolved ID: %v", s.ID))
+			log.Debug(fmt.Sprintf("Resolved URL: %s", s.URL))
+		case http.StatusNotFound:
+			err = s.draft()
+			if err != nil {
+				return err
+			}
+		default:
+			log.Debug(response.body)
+			return fmt.Errorf("unexpected response from server: status code %v", response.Status)
+		}
+
 	}
 
-	err = resolveArticles(s)
+	err := resolveArticles(s, mf)
 	if err != nil {
 		return err
 	}
@@ -359,10 +376,10 @@ func scanSection(c *category, path string) error {
 	return nil
 }
 
-func resolveSections(c *category) error {
+func resolveSections(c *category, mf *Manifest) error {
 
 	for _, v := range c.Sections {
-		err := v.resolve()
+		err := v.resolve(mf)
 		if err != nil {
 			return err
 		}

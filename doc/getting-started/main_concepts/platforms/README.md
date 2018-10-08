@@ -1,14 +1,10 @@
 # Platforms
 
-Platforms are a concept Vorteil uses to name their platforms. A platform could be any hypervisor we support which is Google Cloud Platform, Amazon Web Services, KVM, Virtualbox,  VMware Fusion/Player/Workstation and VSphere.
+Within the Vorteil ecosystem, 'platform' is a term that refers to any support deployment target, whether it's a local hypervisor, a remote cloud platform, or an in-house datacenter.
 
-Vorteil Tools (such as the cli) are able to export to multiple disk formats like  VMDK, RAW, OVA and Google Cloud Platform.
+Adding and configuring a platform is easy to do, and can be done with the Command-Line Interface, Developer Studio, or API. Once added, deploying or provisioning Virtual Machines to the platform is a simple 1 line command (or right-click, 'deploy')!
 
-Platforms can be run on most local hypervisors, remote cloud platforms and inhouse datacenters!
-
-Vorteil Tools supports simple platform management. It provides a way to deploy to a Google Cloud Environment just as easy as running locally to KVM.
-
-They provide the user a way to setup their hypervisor to run with certain settings. For an example I want to provision to KVM without the GUI; we could easily set the platform to use headless mode.
+Additionally, the Vorteil ecosystem supports exporting applications to multiple disk formats (such as VMDK, RAW, and OVA).
 
 ## See Also
 - [Studio Platform Details](../../../studio/platforms)

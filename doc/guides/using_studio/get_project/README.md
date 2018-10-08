@@ -1,10 +1,15 @@
 # Get a Project
-The best way to get a project to use on the Developer Studio would be to add the repository Marketplace which contains a 'helloworld' application.
 
-Via the actions panel there will be a '+' icon which pops open a modal which displays a repository form like the one below. 
+Projects can be manually created and built by users, or extracted from existing Vorteil application packages, such as those found on the official [Vorteil Marketplace](https://marketplace.vorteil.io).
+
+
+To connect to the Vorteil Marketplace with the Developer Studio, left-click on the '+' icon within the application sidebar. This will open a modal which prompts the user for information:
 
 ![New Repo](https://storage.googleapis.com/vorteil-dl/assets/documentation/newrepo.png "New Repo Screenshot")
 
-By entering a name for the repository and the address of marketplace.vorteil.io and hitting add we should now have a one letter character based on the name you gave the repository in the actions panel. 
+Leave the dropdown menu set as 'No Auth', and name the repository as desired (for example: 'marketplace'). In the second text input field, enter the address at which the repository is located: `https://marketplace.vorteil.io`.
 
-To get a project from here dive into a bucket and find an application you would like to run. Right click the application and go 'Export as Project'. Then you will need to provide a directory where you would like to save the project. Upon completion a new project should appear in the tree named around the application you exported.
+To finish this process, click the 'Add' button.
+A new icon will appear in the application sidebar; clicking on this will reveal a list of accessible applications hosted within the newly-added repository. Right-click on any application within the repository, and select 'Export as Project'.
+
+Once the process is complete, the new project will appear in the projects list.
