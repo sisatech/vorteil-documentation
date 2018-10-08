@@ -1,4 +1,0 @@
-create platform
-virtualbox
-studio settings
-platform

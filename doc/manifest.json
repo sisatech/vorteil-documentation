@@ -1,0 +1,948 @@
+{
+    "Categories": {
+        "api": {
+            "ID": 69,
+            "URL": "https://vorteil.kayako.com/api/v1/categories/69"
+        },
+        "apps": {
+            "ID": 70,
+            "URL": "https://vorteil.kayako.com/api/v1/categories/70"
+        },
+        "cli": {
+            "ID": 71,
+            "URL": "https://vorteil.kayako.com/api/v1/categories/71"
+        },
+        "faq": {
+            "ID": 75,
+            "URL": "https://vorteil.kayako.com/api/v1/categories/75"
+        },
+        "getting-started": {
+            "ID": 81,
+            "URL": "https://vorteil.kayako.com/api/v1/categories/81"
+        },
+        "guides": {
+            "ID": 80,
+            "URL": "https://vorteil.kayako.com/api/v1/categories/80"
+        },
+        "installation": {
+            "ID": 73,
+            "URL": "https://vorteil.kayako.com/api/v1/categories/73"
+        },
+        "repository": {
+            "ID": 77,
+            "URL": "https://vorteil.kayako.com/api/v1/categories/77"
+        },
+        "runtime": {
+            "ID": 67,
+            "URL": "https://vorteil.kayako.com/api/v1/categories/67"
+        },
+        "studio": {
+            "ID": 68,
+            "URL": "https://vorteil.kayako.com/api/v1/categories/68"
+        },
+        "version": {
+            "ID": 76,
+            "URL": "https://vorteil.kayako.com/api/v1/categories/76"
+        }
+    },
+    "Sections": {
+        "api/admin": {
+            "ID": 1567,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1567"
+        },
+        "api/authentication": {
+            "ID": 1568,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1568"
+        },
+        "api/fragments": {
+            "ID": 1569,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1569"
+        },
+        "api/germination": {
+            "ID": 1570,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1570"
+        },
+        "api/graphql": {
+            "ID": 1571,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1571"
+        },
+        "apps/general": {
+            "ID": 1588,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1588"
+        },
+        "apps/packages": {
+            "ID": 1585,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1585"
+        },
+        "apps/projects": {
+            "ID": 1586,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1586"
+        },
+        "apps/vcfg": {
+            "ID": 1587,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1587"
+        },
+        "cli/general": {
+            "ID": 1576,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1576"
+        },
+        "cli/images": {
+            "ID": 1577,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1577"
+        },
+        "cli/machines": {
+            "ID": 1578,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1578"
+        },
+        "cli/packages": {
+            "ID": 1572,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1572"
+        },
+        "cli/repositories": {
+            "ID": 1573,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1573"
+        },
+        "cli/settings": {
+            "ID": 1574,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1574"
+        },
+        "cli/vcfgs": {
+            "ID": 1575,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1575"
+        },
+        "faq/host_configuration": {
+            "ID": 1542,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1542"
+        },
+        "faq/kernel": {
+            "ID": 1543,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1543"
+        },
+        "faq/repository": {
+            "ID": 1544,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1544"
+        },
+        "faq/runtime_errors": {
+            "ID": 1545,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1545"
+        },
+        "faq/windows_bluescreen": {
+            "ID": 1546,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1546"
+        },
+        "getting-started/installation": {
+            "ID": 1547,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1547"
+        },
+        "getting-started/main_concepts": {
+            "ID": 1548,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1548"
+        },
+        "getting-started/overview": {
+            "ID": 1549,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1549"
+        },
+        "getting-started/quick-start": {
+            "ID": 1550,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1550"
+        },
+        "guides/importing_shared_objects": {
+            "ID": 1553,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1553"
+        },
+        "guides/optimization": {
+            "ID": 1554,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1554"
+        },
+        "guides/porting": {
+            "ID": 1555,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1555"
+        },
+        "guides/quickstart": {
+            "ID": 1556,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1556"
+        },
+        "guides/user_specific_installation": {
+            "ID": 1551,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1551"
+        },
+        "guides/using_studio": {
+            "ID": 1552,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1552"
+        },
+        "installation/hypervisors": {
+            "ID": 1557,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1557"
+        },
+        "installation/kernels": {
+            "ID": 1558,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1558"
+        },
+        "installation/repository": {
+            "ID": 1559,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1559"
+        },
+        "repository/acls": {
+            "ID": 1561,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1561"
+        },
+        "repository/apps": {
+            "ID": 1562,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1562"
+        },
+        "repository/buckets": {
+            "ID": 1563,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1563"
+        },
+        "repository/introduction": {
+            "ID": 1564,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1564"
+        },
+        "repository/sharing": {
+            "ID": 1560,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1560"
+        },
+        "runtime/configuration": {
+            "ID": 1565,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1565"
+        },
+        "runtime/environment": {
+            "ID": 1566,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1566"
+        },
+        "studio/introduction": {
+            "ID": 1581,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1581"
+        },
+        "studio/listeners": {
+            "ID": 1582,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1582"
+        },
+        "studio/platforms": {
+            "ID": 1583,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1583"
+        },
+        "studio/projects": {
+            "ID": 1584,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1584"
+        },
+        "studio/quick_start": {
+            "ID": 1579,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1579"
+        },
+        "studio/vm_info": {
+            "ID": 1580,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1580"
+        },
+        "version/api": {
+            "ID": 1593,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1593"
+        },
+        "version/cli": {
+            "ID": 1594,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1594"
+        },
+        "version/compiler": {
+            "ID": 1595,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1595"
+        },
+        "version/kernel": {
+            "ID": 1596,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1596"
+        },
+        "version/miscellaneous": {
+            "ID": 1589,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1589"
+        },
+        "version/packages": {
+            "ID": 1590,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1590"
+        },
+        "version/server": {
+            "ID": 1591,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1591"
+        },
+        "version/studio": {
+            "ID": 1592,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1592"
+        }
+    },
+    "Articles": {
+        "api/admin/keys": {
+            "ID": 484,
+            "URL": "https://support.vorteil.io/article/484"
+        },
+        "api/admin/version_check": {
+            "ID": 2465,
+            "URL": "https://support.vorteil.io/article/2465"
+        },
+        "api/authentication/login_logout": {
+            "ID": 2466,
+            "URL": "https://support.vorteil.io/article/2466"
+        },
+        "api/fragments/signeduris": {
+            "ID": 2467,
+            "URL": "https://support.vorteil.io/article/2467"
+        },
+        "api/germination/buildable": {
+            "ID": 2468,
+            "URL": "https://support.vorteil.io/article/2468"
+        },
+        "api/germination/graphhql-germ-creation": {
+            "ID": 2469,
+            "URL": "https://support.vorteil.io/article/2469"
+        },
+        "api/germination/packable": {
+            "ID": 2470,
+            "URL": "https://support.vorteil.io/article/2470"
+        },
+        "api/germination/provisionable": {
+            "ID": 2471,
+            "URL": "https://support.vorteil.io/article/2471"
+        },
+        "api/germination/pushable": {
+            "ID": 2472,
+            "URL": "https://support.vorteil.io/article/2472"
+        },
+        "api/germination/unpackable": {
+            "ID": 2473,
+            "URL": "https://support.vorteil.io/article/2473"
+        },
+        "api/graphql/graphql": {
+            "ID": 368,
+            "URL": "https://support.vorteil.io/article/368"
+        },
+        "apps/general/buildable": {
+            "ID": 2527,
+            "URL": "https://support.vorteil.io/article/2527"
+        },
+        "apps/general/filesystem": {
+            "ID": 2528,
+            "URL": "https://support.vorteil.io/article/2528"
+        },
+        "apps/general/packable": {
+            "ID": 2523,
+            "URL": "https://support.vorteil.io/article/2523"
+        },
+        "apps/general/provisionable": {
+            "ID": 2524,
+            "URL": "https://support.vorteil.io/article/2524"
+        },
+        "apps/general/runnable": {
+            "ID": 2525,
+            "URL": "https://support.vorteil.io/article/2525"
+        },
+        "apps/general/unpackable": {
+            "ID": 2526,
+            "URL": "https://support.vorteil.io/article/2526"
+        },
+        "apps/packages/creation": {
+            "ID": 2517,
+            "URL": "https://support.vorteil.io/article/2517"
+        },
+        "apps/packages/introduction": {
+            "ID": 2518,
+            "URL": "https://support.vorteil.io/article/2518"
+        },
+        "apps/projects/ignore": {
+            "ID": 520,
+            "URL": "https://support.vorteil.io/article/520"
+        },
+        "apps/projects/introduction": {
+            "ID": 2519,
+            "URL": "https://support.vorteil.io/article/2519"
+        },
+        "apps/projects/structure": {
+            "ID": 2520,
+            "URL": "https://support.vorteil.io/article/2520"
+        },
+        "apps/projects/targets": {
+            "ID": 2521,
+            "URL": "https://support.vorteil.io/article/2521"
+        },
+        "apps/projects/vcli1": {
+            "ID": 524,
+            "URL": "https://support.vorteil.io/article/524"
+        },
+        "apps/vcfg/args": {
+            "ID": 643,
+            "URL": "https://support.vorteil.io/article/643"
+        },
+        "apps/vcfg/env": {
+            "ID": 644,
+            "URL": "https://support.vorteil.io/article/644"
+        },
+        "apps/vcfg/example": {
+            "ID": 645,
+            "URL": "https://support.vorteil.io/article/645"
+        },
+        "apps/vcfg/info": {
+            "ID": 637,
+            "URL": "https://support.vorteil.io/article/637"
+        },
+        "apps/vcfg/introduction": {
+            "ID": 2522,
+            "URL": "https://support.vorteil.io/article/2522"
+        },
+        "apps/vcfg/merging": {
+            "ID": 646,
+            "URL": "https://support.vorteil.io/article/646"
+        },
+        "apps/vcfg/network": {
+            "ID": 647,
+            "URL": "https://support.vorteil.io/article/647"
+        },
+        "apps/vcfg/nfs": {
+            "ID": 641,
+            "URL": "https://support.vorteil.io/article/641"
+        },
+        "apps/vcfg/redirects": {
+            "ID": 639,
+            "URL": "https://support.vorteil.io/article/639"
+        },
+        "apps/vcfg/system": {
+            "ID": 640,
+            "URL": "https://support.vorteil.io/article/640"
+        },
+        "apps/vcfg/vm": {
+            "ID": 642,
+            "URL": "https://support.vorteil.io/article/642"
+        },
+        "cli/general/help": {
+            "ID": 266,
+            "URL": "https://support.vorteil.io/article/266"
+        },
+        "cli/general/run": {
+            "ID": 267,
+            "URL": "https://support.vorteil.io/article/267"
+        },
+        "cli/general/version": {
+            "ID": 268,
+            "URL": "https://support.vorteil.io/article/268"
+        },
+        "cli/images/analyze": {
+            "ID": 217,
+            "URL": "https://support.vorteil.io/article/217"
+        },
+        "cli/images/build": {
+            "ID": 218,
+            "URL": "https://support.vorteil.io/article/218"
+        },
+        "cli/machines/delete": {
+            "ID": 220,
+            "URL": "https://support.vorteil.io/article/220"
+        },
+        "cli/machines/image": {
+            "ID": 224,
+            "URL": "https://support.vorteil.io/article/224"
+        },
+        "cli/machines/list": {
+            "ID": 221,
+            "URL": "https://support.vorteil.io/article/221"
+        },
+        "cli/machines/pause": {
+            "ID": 225,
+            "URL": "https://support.vorteil.io/article/225"
+        },
+        "cli/machines/provision": {
+            "ID": 2504,
+            "URL": "https://support.vorteil.io/article/2504"
+        },
+        "cli/machines/start": {
+            "ID": 223,
+            "URL": "https://support.vorteil.io/article/223"
+        },
+        "cli/machines/status": {
+            "ID": 219,
+            "URL": "https://support.vorteil.io/article/219"
+        },
+        "cli/machines/stop": {
+            "ID": 226,
+            "URL": "https://support.vorteil.io/article/226"
+        },
+        "cli/machines/tail": {
+            "ID": 227,
+            "URL": "https://support.vorteil.io/article/227"
+        },
+        "cli/packages/inspect": {
+            "ID": 228,
+            "URL": "https://support.vorteil.io/article/228"
+        },
+        "cli/packages/pack": {
+            "ID": 229,
+            "URL": "https://support.vorteil.io/article/229"
+        },
+        "cli/packages/unpack": {
+            "ID": 230,
+            "URL": "https://support.vorteil.io/article/230"
+        },
+        "cli/repositories/connect": {
+            "ID": 2474,
+            "URL": "https://support.vorteil.io/article/2474"
+        },
+        "cli/repositories/connections": {
+            "ID": 2481,
+            "URL": "https://support.vorteil.io/article/2481"
+        },
+        "cli/repositories/delete": {
+            "ID": 2475,
+            "URL": "https://support.vorteil.io/article/2475"
+        },
+        "cli/repositories/disconnect": {
+            "ID": 2482,
+            "URL": "https://support.vorteil.io/article/2482"
+        },
+        "cli/repositories/download": {
+            "ID": 2483,
+            "URL": "https://support.vorteil.io/article/2483"
+        },
+        "cli/repositories/germ": {
+            "ID": 2484,
+            "URL": "https://support.vorteil.io/article/2484"
+        },
+        "cli/repositories/list": {
+            "ID": 2476,
+            "URL": "https://support.vorteil.io/article/2476"
+        },
+        "cli/repositories/new-bucket": {
+            "ID": 2478,
+            "URL": "https://support.vorteil.io/article/2478"
+        },
+        "cli/repositories/pull": {
+            "ID": 2479,
+            "URL": "https://support.vorteil.io/article/2479"
+        },
+        "cli/repositories/push": {
+            "ID": 2477,
+            "URL": "https://support.vorteil.io/article/2477"
+        },
+        "cli/repositories/tag": {
+            "ID": 234,
+            "URL": "https://support.vorteil.io/article/234"
+        },
+        "cli/repositories/untag": {
+            "ID": 2480,
+            "URL": "https://support.vorteil.io/article/2480"
+        },
+        "cli/repositories/upload": {
+            "ID": 2485,
+            "URL": "https://support.vorteil.io/article/2485"
+        },
+        "cli/settings/kernels": {
+            "ID": 246,
+            "URL": "https://support.vorteil.io/article/246"
+        },
+        "cli/settings/kernels_default": {
+            "ID": 2489,
+            "URL": "https://support.vorteil.io/article/2489"
+        },
+        "cli/settings/kernels_delete": {
+            "ID": 2501,
+            "URL": "https://support.vorteil.io/article/2501"
+        },
+        "cli/settings/kernels_download": {
+            "ID": 2496,
+            "URL": "https://support.vorteil.io/article/2496"
+        },
+        "cli/settings/kernels_list": {
+            "ID": 2497,
+            "URL": "https://support.vorteil.io/article/2497"
+        },
+        "cli/settings/kernels_update": {
+            "ID": 2498,
+            "URL": "https://support.vorteil.io/article/2498"
+        },
+        "cli/settings/platforms": {
+            "ID": 2499,
+            "URL": "https://support.vorteil.io/article/2499"
+        },
+        "cli/settings/platforms_default": {
+            "ID": 2486,
+            "URL": "https://support.vorteil.io/article/2486"
+        },
+        "cli/settings/platforms_delete": {
+            "ID": 2500,
+            "URL": "https://support.vorteil.io/article/2500"
+        },
+        "cli/settings/platforms_list": {
+            "ID": 2502,
+            "URL": "https://support.vorteil.io/article/2502"
+        },
+        "cli/settings/platforms_new": {
+            "ID": 2503,
+            "URL": "https://support.vorteil.io/article/2503"
+        },
+        "cli/settings/platforms_new_aws": {
+            "ID": 2494,
+            "URL": "https://support.vorteil.io/article/2494"
+        },
+        "cli/settings/platforms_new_gcp": {
+            "ID": 2487,
+            "URL": "https://support.vorteil.io/article/2487"
+        },
+        "cli/settings/platforms_new_kvm": {
+            "ID": 2488,
+            "URL": "https://support.vorteil.io/article/2488"
+        },
+        "cli/settings/platforms_new_vcenter": {
+            "ID": 2495,
+            "URL": "https://support.vorteil.io/article/2495"
+        },
+        "cli/settings/platforms_new_virtualbox": {
+            "ID": 2490,
+            "URL": "https://support.vorteil.io/article/2490"
+        },
+        "cli/settings/platforms_new_vmware-fusion": {
+            "ID": 2491,
+            "URL": "https://support.vorteil.io/article/2491"
+        },
+        "cli/settings/platforms_new_vmware-player": {
+            "ID": 2492,
+            "URL": "https://support.vorteil.io/article/2492"
+        },
+        "cli/settings/platforms_new_vmware-workstation": {
+            "ID": 2493,
+            "URL": "https://support.vorteil.io/article/2493"
+        },
+        "cli/vcfgs/example": {
+            "ID": 263,
+            "URL": "https://support.vorteil.io/article/263"
+        },
+        "cli/vcfgs/files": {
+            "ID": 466,
+            "URL": "https://support.vorteil.io/article/466"
+        },
+        "cli/vcfgs/flags": {
+            "ID": 467,
+            "URL": "https://support.vorteil.io/article/467"
+        },
+        "cli/vcfgs/from-germ": {
+            "ID": 264,
+            "URL": "https://support.vorteil.io/article/264"
+        },
+        "cli/vcfgs/info": {
+            "ID": 468,
+            "URL": "https://support.vorteil.io/article/468"
+        },
+        "cli/vcfgs/invocation": {
+            "ID": 469,
+            "URL": "https://support.vorteil.io/article/469"
+        },
+        "cli/vcfgs/lint": {
+            "ID": 265,
+            "URL": "https://support.vorteil.io/article/265"
+        },
+        "cli/vcfgs/merging": {
+            "ID": 470,
+            "URL": "https://support.vorteil.io/article/470"
+        },
+        "cli/vcfgs/network": {
+            "ID": 471,
+            "URL": "https://support.vorteil.io/article/471"
+        },
+        "cli/vcfgs/new": {
+            "ID": 262,
+            "URL": "https://support.vorteil.io/article/262"
+        },
+        "cli/vcfgs/redirects": {
+            "ID": 472,
+            "URL": "https://support.vorteil.io/article/472"
+        },
+        "cli/vcfgs/system": {
+            "ID": 473,
+            "URL": "https://support.vorteil.io/article/473"
+        },
+        "cli/vcfgs/vm": {
+            "ID": 474,
+            "URL": "https://support.vorteil.io/article/474"
+        },
+        "faq/host_configuration/studio_wont_start": {
+            "ID": 2417,
+            "URL": "https://support.vorteil.io/article/2417"
+        },
+        "faq/host_configuration/using_a_proxy": {
+            "ID": 2418,
+            "URL": "https://support.vorteil.io/article/2418"
+        },
+        "faq/host_configuration/where_is_the_config": {
+            "ID": 2419,
+            "URL": "https://support.vorteil.io/article/2419"
+        },
+        "faq/kernel/panic_missing_linker": {
+            "ID": 2420,
+            "URL": "https://support.vorteil.io/article/2420"
+        },
+        "faq/kernel/which_ring_does_vorteil_run_on": {
+            "ID": 2421,
+            "URL": "https://support.vorteil.io/article/2421"
+        },
+        "faq/repository/permission_denied_when_pulling_to_local": {
+            "ID": 2422,
+            "URL": "https://support.vorteil.io/article/2422"
+        },
+        "faq/runtime_errors/missing_shared_object": {
+            "ID": 2423,
+            "URL": "https://support.vorteil.io/article/2423"
+        },
+        "faq/runtime_errors/no_linker": {
+            "ID": 2424,
+            "URL": "https://support.vorteil.io/article/2424"
+        },
+        "faq/runtime_errors/out_of_memory": {
+            "ID": 2425,
+            "URL": "https://support.vorteil.io/article/2425"
+        },
+        "faq/windows_bluescreen/disable_hyperv": {
+            "ID": 2426,
+            "URL": "https://support.vorteil.io/article/2426"
+        },
+        "getting-started/installation/general": {
+            "ID": 2427,
+            "URL": "https://support.vorteil.io/article/2427"
+        },
+        "getting-started/main_concepts/architecture": {
+            "ID": 2428,
+            "URL": "https://support.vorteil.io/article/2428"
+        },
+        "getting-started/main_concepts/filesystem": {
+            "ID": 2429,
+            "URL": "https://support.vorteil.io/article/2429"
+        },
+        "getting-started/main_concepts/network": {
+            "ID": 2430,
+            "URL": "https://support.vorteil.io/article/2430"
+        },
+        "getting-started/main_concepts/platforms": {
+            "ID": 2431,
+            "URL": "https://support.vorteil.io/article/2431"
+        },
+        "getting-started/main_concepts/projects": {
+            "ID": 2432,
+            "URL": "https://support.vorteil.io/article/2432"
+        },
+        "getting-started/main_concepts/repository": {
+            "ID": 2433,
+            "URL": "https://support.vorteil.io/article/2433"
+        },
+        "getting-started/overview/general": {
+            "ID": 2434,
+            "URL": "https://support.vorteil.io/article/2434"
+        },
+        "getting-started/overview/infrastructure": {
+            "ID": 2435,
+            "URL": "https://support.vorteil.io/article/2435"
+        },
+        "getting-started/overview/uni-kernel-approach": {
+            "ID": 2436,
+            "URL": "https://support.vorteil.io/article/2436"
+        },
+        "getting-started/quick-start/connect_to_vorteil_marketplace": {
+            "ID": 2437,
+            "URL": "https://support.vorteil.io/article/2437"
+        },
+        "getting-started/quick-start/pick_an_application": {
+            "ID": 2438,
+            "URL": "https://support.vorteil.io/article/2438"
+        },
+        "getting-started/quick-start/run_an_application": {
+            "ID": 2439,
+            "URL": "https://support.vorteil.io/article/2439"
+        },
+        "getting-started/quick-start/running_your_first_app_on_vorteil": {
+            "ID": 2440,
+            "URL": "https://support.vorteil.io/article/2440"
+        },
+        "guides/importing_shared_objects/shared_objects": {
+            "ID": 2445,
+            "URL": "https://support.vorteil.io/article/2445"
+        },
+        "guides/quickstart/build_disk_using_api": {
+            "ID": 2446,
+            "URL": "https://support.vorteil.io/article/2446"
+        },
+        "guides/quickstart/configuring_applications_from_marketplace": {
+            "ID": 2447,
+            "URL": "https://support.vorteil.io/article/2447"
+        },
+        "guides/quickstart/running_your_first_app": {
+            "ID": 2448,
+            "URL": "https://support.vorteil.io/article/2448"
+        },
+        "guides/quickstart/tagging_an_application_version": {
+            "ID": 2449,
+            "URL": "https://support.vorteil.io/article/2449"
+        },
+        "guides/user_specific_installation/configuring": {
+            "ID": 2441,
+            "URL": "https://support.vorteil.io/article/2441"
+        },
+        "guides/using_studio/create_platform": {
+            "ID": 2442,
+            "URL": "https://support.vorteil.io/article/2442"
+        },
+        "guides/using_studio/get_project": {
+            "ID": 2443,
+            "URL": "https://support.vorteil.io/article/2443"
+        },
+        "guides/using_studio/run_application": {
+            "ID": 2444,
+            "URL": "https://support.vorteil.io/article/2444"
+        },
+        "installation/hypervisors/amazon_web_services": {
+            "ID": 2451,
+            "URL": "https://support.vorteil.io/article/2451"
+        },
+        "installation/hypervisors/google_cloud_platform": {
+            "ID": 2452,
+            "URL": "https://support.vorteil.io/article/2452"
+        },
+        "installation/hypervisors/vcenter": {
+            "ID": 2450,
+            "URL": "https://support.vorteil.io/article/2450"
+        },
+        "installation/kernels/change_kernel_sources": {
+            "ID": 2453,
+            "URL": "https://support.vorteil.io/article/2453"
+        },
+        "installation/repository/installing_the_vorteil_repository": {
+            "ID": 2454,
+            "URL": "https://support.vorteil.io/article/2454"
+        },
+        "repository/acls/applying_acl_rules": {
+            "ID": 2456,
+            "URL": "https://support.vorteil.io/article/2456"
+        },
+        "repository/acls/granting_access_to_singleton": {
+            "ID": 2457,
+            "URL": "https://support.vorteil.io/article/2457"
+        },
+        "repository/apps/fragments": {
+            "ID": 2458,
+            "URL": "https://support.vorteil.io/article/2458"
+        },
+        "repository/apps/uploading_apps": {
+            "ID": 2459,
+            "URL": "https://support.vorteil.io/article/2459"
+        },
+        "repository/apps/version_control": {
+            "ID": 2460,
+            "URL": "https://support.vorteil.io/article/2460"
+        },
+        "repository/buckets/creating_a_bucket": {
+            "ID": 2461,
+            "URL": "https://support.vorteil.io/article/2461"
+        },
+        "repository/introduction/introduction_to_vrepo": {
+            "ID": 2462,
+            "URL": "https://support.vorteil.io/article/2462"
+        },
+        "repository/sharing/pushing_pulling_apps": {
+            "ID": 2455,
+            "URL": "https://support.vorteil.io/article/2455"
+        },
+        "runtime/configuration/introduction": {
+            "ID": 2463,
+            "URL": "https://support.vorteil.io/article/2463"
+        },
+        "runtime/environment/cloud": {
+            "ID": 2464,
+            "URL": "https://support.vorteil.io/article/2464"
+        },
+        "studio/introduction/user_interface": {
+            "ID": 2508,
+            "URL": "https://support.vorteil.io/article/2508"
+        },
+        "studio/introduction/videos": {
+            "ID": 2509,
+            "URL": "https://support.vorteil.io/article/2509"
+        },
+        "studio/listeners/add_listener": {
+            "ID": 2510,
+            "URL": "https://support.vorteil.io/article/2510"
+        },
+        "studio/listeners/attach_listener": {
+            "ID": 2511,
+            "URL": "https://support.vorteil.io/article/2511"
+        },
+        "studio/platforms/amazon_web_services": {
+            "ID": 2512,
+            "URL": "https://support.vorteil.io/article/2512"
+        },
+        "studio/platforms/google_cloud_platform": {
+            "ID": 2513,
+            "URL": "https://support.vorteil.io/article/2513"
+        },
+        "studio/platforms/kvm": {
+            "ID": 279,
+            "URL": "https://support.vorteil.io/article/279"
+        },
+        "studio/platforms/virtualbox": {
+            "ID": 2514,
+            "URL": "https://support.vorteil.io/article/2514"
+        },
+        "studio/platforms/vmware_fusion_player_workstation": {
+            "ID": 2515,
+            "URL": "https://support.vorteil.io/article/2515"
+        },
+        "studio/platforms/vmware_vcenter": {
+            "ID": 2516,
+            "URL": "https://support.vorteil.io/article/2516"
+        },
+        "studio/projects/new": {
+            "ID": 507,
+            "URL": "https://support.vorteil.io/article/507"
+        },
+        "studio/quick_start/create_platform": {
+            "ID": 2505,
+            "URL": "https://support.vorteil.io/article/2505"
+        },
+        "studio/quick_start/get_project": {
+            "ID": 2506,
+            "URL": "https://support.vorteil.io/article/2506"
+        },
+        "studio/quick_start/run_application": {
+            "ID": 2507,
+            "URL": "https://support.vorteil.io/article/2507"
+        },
+        "studio/vm_info/ui": {
+            "ID": 287,
+            "URL": "https://support.vorteil.io/article/287"
+        },
+        "version/api/0.1": {
+            "ID": 1342,
+            "URL": "https://support.vorteil.io/article/1342"
+        },
+        "version/cli/2.0": {
+            "ID": 1238,
+            "URL": "https://support.vorteil.io/article/1238"
+        },
+        "version/compiler/2.0": {
+            "ID": 1343,
+            "URL": "https://support.vorteil.io/article/1343"
+        },
+        "version/kernel/0.3": {
+            "ID": 1344,
+            "URL": "https://support.vorteil.io/article/1344"
+        },
+        "version/miscellaneous/contracts": {
+            "ID": 2529,
+            "URL": "https://support.vorteil.io/article/2529"
+        },
+        "version/miscellaneous/old": {
+            "ID": 2530,
+            "URL": "https://support.vorteil.io/article/2530"
+        },
+        "version/packages/2.0": {
+            "ID": 1341,
+            "URL": "https://support.vorteil.io/article/1341"
+        },
+        "version/server/2.0": {
+            "ID": 1241,
+            "URL": "https://support.vorteil.io/article/1241"
+        },
+        "version/studio/2.0": {
+            "ID": 1236,
+            "URL": "https://support.vorteil.io/article/1236"
+        }
+    }
+}

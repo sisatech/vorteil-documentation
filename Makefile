@@ -9,4 +9,4 @@ build/kayako:
 
 .PHONY: sync 
 sync:
-	build/kayako doc backup --sync
+	build/kayako doc backup --sync 

@@ -1,3 +1,3 @@
 # Getting Started
 
-A brief look at what Vorteil is.
+Getting started with Vorteil. Provides help with concepts, quick start guide an installation
