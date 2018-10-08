@@ -1,6 +1,7 @@
 guides
-studio
-user specific
 quickstart
 getting started
-chocolateisgood
+quick start
+help
+helpful
+guide

@@ -31,4 +31,4 @@ $ vorteil run marketplace:sisatech/helloworld
 Congratulations! You've run run your first application with Vorteil!
 
 ## See Also
-- [Configuring Applications From The Marketplace]()
+- [Configuring Applications From The Marketplace](../configuring_applications_from_marketplace)

@@ -1,0 +1,8 @@
+configure
+application
+app
+applications
+apps
+marketplace
+repository
+unpack

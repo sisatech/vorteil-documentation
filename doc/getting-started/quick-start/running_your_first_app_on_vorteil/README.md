@@ -1,0 +1,2 @@
+# Running Your First App on Vorteil
+This focus of this guide is to walk users through the process of establishing a connection to the Vorteil Marketplace and running one of the listed applications. This is a simple process, that can be carried out with the Command-Line Interface (CLI), the Developer Studio application, or directly via the GraphQL APIs.
