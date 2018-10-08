@@ -1,3 +1,2 @@
 # Optimization
-
-All about getting the best possible performance out of your apps.
+Fine-tune your applications for the absolute best performance!

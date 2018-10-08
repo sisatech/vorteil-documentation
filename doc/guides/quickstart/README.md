@@ -1,3 +1,3 @@
-# Quick start guide
+# Quick Start Guides
 
-Easy guides for getting started with Vorteil.
+Get familiarised with Vorteil with these helpful guides.

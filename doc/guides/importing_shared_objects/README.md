@@ -1,2 +1,2 @@
 # Importing Shared Objects
-Tips on how to get the shared objects required to run your binary.
+How to include the shared objects/libraries your app depends on.

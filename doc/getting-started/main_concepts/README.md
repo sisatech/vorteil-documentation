@@ -1,2 +1,2 @@
 # Main Concepts of Vorteil  
-The main concepts of what Vorteil is.
+Important concepts within the Vorteil ecosystem.

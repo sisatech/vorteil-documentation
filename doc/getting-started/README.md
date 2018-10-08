@@ -1,3 +1,3 @@
 # Getting Started
 
-A brief look at what Vorteil is.
+Start using Vorteil straight away!

@@ -1,3 +1,3 @@
 # Porting
 
-Convert existing software into Vorteil apps.
+Port existing applications to Vorteil-compatible applications.
