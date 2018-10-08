@@ -1,18 +1,20 @@
-# Create a platform
+# Creating a Platform
 
-Now to run this application using the vorteil kernel. We will need to create a platform. The platform we will be creating will be for the Virtualbox hypervisor.
+In order to run an application, a platform must be configured. Vorteil will attempt to automatically configure itself to use any hypervisors detected on the local machine; but it is still possible to add platforms with alternative configuration (such as GUI/headless modes), and even add supported remote platforms (such as Google Cloud Platform, Amazon Web Services, or VMWare vCenter).
 
-To get to the area to add a new platform look at the bottom left for the Settings menu. Upon clicking the settings menu you should see a tab window open like below.
+With the Developer Studio open, click on the 'Settings' icon on the bottom-left corner of the window.
 
 ![Settings](https://storage.googleapis.com/vorteil-dl/assets/documentation/settings.png "Settings")
 
-The first area is the Default Settings. These settings will be used when the VCFG doesn't provide the field they want to use. Some of the other settings will stop the VCFG details for example Ignore Kernel will always use the default one set than the one in the VCFG.
+At the top of the Settings page, current default settings are displayed. These settings will be used in various processes if no alternative is specifically defined. Other settings, such as 'Ignore Kernel' (instructing Vorteil to use the default kernel instead of the kernel defined in an application config), exist as 'quality of life' improvements.
 
-Right now we are after the Platforms section to add a platform. Upon choosing virtualbox a new form should appear like the one below.
+Below this section is the 'Platforms' section.
 
 ![VirtualBox](https://storage.googleapis.com/vorteil-dl/assets/documentation/vbox.png "Virtualbox Form")
 
-- Platform Name - what the daemon will refer to for provisioning
-- Network Interface - used to work out whether its Bridged or NAT. Leave default for NAT or choose the device you want to run this on for bridged.
-- Super Debug - Provides more provisioning logs to help debug why your virtual machine isn't running properly as it may be happening in a stage thats harder to correct.
-- Headless - You can run most hypervisors in GUI or non GUI mode. The default is set to non GUI as the Developer Studio outputs the information on the virtual machine page.
+The above image shows the input form for a new 'VirtualBox' configuration. Provide a name, and complete the rest of the form as desired. 
+
+- Platform Name: a user defined name for the new platform configuation
+- Network Interface: if provided with valid input, applications running on this platform will run on a bridged network. Leave blank for NAT.
+- Super Debug: when active, processes will include more debug information in the logs relating to this platform.
+- Headless: if checked, virtual machines will start up without a GUI window opening.

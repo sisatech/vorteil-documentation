@@ -12,16 +12,21 @@ For example to expose port 8080 to HTTP traffic and 443 to HTTPS traffic is show
 ```
 The double brackets in this TOML struct also imply its repeatable so we're able to have more than one network if required.
 
-If the ports the configuration is asking for are not available at run time (for example running on a NATed network). The Vorteil Tools will automatically select an available port instead which will then be displayed to the users that the certain port they could not get has been forwarded to the new one.
+If the ports the configuration is asking for are not available at run time (for example running on a NAT network), the Vorteil tools will automatically select an alternative available port.
 
-Optional fields for the network object are shown below.
-- http/https: both of these objects can also be optional.
-- mask: defines the subnet mask the kernel should set for the network interface.
-- gateway: defines the gateway the kernel should set for a network interface.
-- udp: a list of ports that the UDP traffic will listen on.
-- tcp: a list of ports that the TCP traffic will listen on.
-- mtu: the maximum transmission unit for a network interface.
-- disable-tso: a boolean to determine whether to use segmentation offloading.
+Supported protocols to include within the 'network' area of an application config include:
+
+- http
+- https
+- udp
+- tcp
+
+Additional settings include:
+
+- gateway
+- mask
+- mtu (maximum transmission unit)
+- disable-tso (boolean value: disable TCP segmentation offloading)
 
 ## See Also
 - [In-depth Networking Details](../../../apps/vcfg/network)
