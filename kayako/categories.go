@@ -10,25 +10,22 @@ import (
 	"net/url"
 	"os"
 	"path/filepath"
-	"strconv"
 	"strings"
 
 	"github.com/inconshreveable/log15"
 )
 
 type category struct {
-	logger       log15.Logger
-	ID           int
-	LegacyID     string
-	URL          string
-	path         string
-	title        string
-	description  string
-	loaded       bool
-	displayOrder int
-	Sections     map[string]*section
-	latestOrder  int
-	keywords     []string
+	logger      log15.Logger
+	ID          int
+	LegacyID    string
+	URL         string
+	path        string
+	title       string
+	description string
+	loaded      bool
+	Sections    map[string]*section
+	keywords    []string
 }
 
 var updatedCategories map[int]bool
@@ -117,48 +114,65 @@ func (c *category) Description() (string, error) {
 	return c.description, nil
 }
 
-func (c *category) resolve() error {
+func (c *category) resolve(mf *Manifest) error {
 
 	log := c.logger
-	log.Debug("Resolving ID & URL")
 
-	url := fmt.Sprintf("https://vorteil.kayako.com/api/v1/categories.json?legacy_ids=%s", url.QueryEscape(c.LegacyID))
-	req, err := http.NewRequest(http.MethodGet, url, nil)
-	if err != nil {
-		return err
-	}
+	tuple, ok := mf.Categories[c.LegacyID]
+	if ok {
 
-	response, err := do(req)
-	if err != nil {
-		return err
-	}
-
-	switch response.Status {
-	case http.StatusOK:
-		info := new(schemaCategory)
-		err = convert(response.Data, info)
-		if err != nil {
-			panic(err)
-		}
-
-		c.ID = info.ID
-		c.URL = info.ResourceURL
+		log.Debug("ID & URL found in manifest file")
+		c.ID = tuple.ID
+		c.URL = tuple.URL
 		if c.URL == "" {
 			panic(errors.New("resource url is an empty string"))
 		}
 		log.Debug(fmt.Sprintf("Resolved ID: %v", c.ID))
 		log.Debug(fmt.Sprintf("Resolved URL: %s", c.URL))
-	case http.StatusNotFound:
-		err = c.draft()
+
+	} else {
+
+		log.Debug("Resolving ID & URL")
+
+		url := fmt.Sprintf("https://vorteil.kayako.com/api/v1/categories.json?legacy_ids=%s", url.QueryEscape(c.LegacyID))
+		req, err := http.NewRequest(http.MethodGet, url, nil)
 		if err != nil {
 			return err
 		}
-	default:
-		log.Debug(response.body)
-		return fmt.Errorf("unexpected response from server: status code %v", response.Status)
+
+		response, err := do(req)
+		if err != nil {
+			return err
+		}
+
+		switch response.Status {
+		case http.StatusOK:
+			info := new(schemaCategory)
+			err = convert(response.Data, info)
+			if err != nil {
+				panic(err)
+			}
+
+			c.ID = info.ID
+			c.URL = info.ResourceURL
+			if c.URL == "" {
+				panic(errors.New("resource url is an empty string"))
+			}
+			log.Debug(fmt.Sprintf("Resolved ID: %v", c.ID))
+			log.Debug(fmt.Sprintf("Resolved URL: %s", c.URL))
+		case http.StatusNotFound:
+			err = c.draft()
+			if err != nil {
+				return err
+			}
+		default:
+			log.Debug(response.body)
+			return fmt.Errorf("unexpected response from server: status code %v", response.Status)
+		}
+
 	}
 
-	err = resolveSections(c)
+	err := resolveSections(c, mf)
 	if err != nil {
 		return err
 	}
@@ -170,12 +184,6 @@ func (c *category) resolve() error {
 func (c *category) draft() error {
 	log := c.logger
 	log.Info("Creating category skeleton")
-
-	if c.displayOrder == 0 {
-		model.latestOrder++
-		c.displayOrder = model.latestOrder
-	}
-	c.displayOrder--
 
 	title, err := c.Title()
 	if err != nil {
@@ -197,7 +205,6 @@ func (c *category) draft() error {
 			Locale:      "en-us",
 			Translation: description,
 		}},
-		"display_order": c.displayOrder,
 	}
 
 	data, err := json.Marshal(&m)
@@ -342,19 +349,6 @@ func scanCategory(path string) error {
 
 	key := filepath.Base(path)
 
-	// check if filename includes article display order
-	elems := strings.SplitN(key, "_", 2)
-	if len(elems) == 2 {
-		x, err := strconv.ParseUint(elems[0], 10, 64)
-		if err == nil {
-			c.displayOrder = int(x) + 1
-			key = elems[1]
-			if c.displayOrder > model.latestOrder {
-				model.latestOrder = c.displayOrder
-			}
-		}
-	}
-
 	model.Categories[key] = c
 
 	err := scanSections(c)
@@ -365,10 +359,10 @@ func scanCategory(path string) error {
 	return nil
 }
 
-func resolveCategories() error {
+func resolveCategories(mf *Manifest) error {
 
 	for _, v := range model.Categories {
-		err := v.resolve()
+		err := v.resolve(mf)
 		if err != nil {
 			return err
 		}
