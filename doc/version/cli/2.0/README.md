@@ -6,6 +6,9 @@ version.
 ## Relationships
 - [API: 0.1](../../api/0.1)
 
+## 2.0.2 (2018-10-10)
+- 'images build' no longer ouputs a disk named "." if no arg was provided (ie. running directly from project directory)
+
 ## 2.0.1 (2018-09-26)
 - Now correctly handles relative paths as project arguments with build variants specified (eg. './myProject:dev').
 - The 'vcfgs lint' command no longer erroneously returns a 'vcfg does not exist' error when provided a relative path.
