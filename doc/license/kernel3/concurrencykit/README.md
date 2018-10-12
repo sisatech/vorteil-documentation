@@ -4,7 +4,7 @@ Concurrency primitives, safe memory reclamation mechanisms and non-blocking data
 
 http://concurrencykit.org/
 
-```
+
 Copyright 2010-2014 Samy Al Bahra.
 Copyright 2011-2013 AppNexus, Inc.
 All rights reserved.
@@ -58,4 +58,3 @@ provided with the distribution
 THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED
 WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
 MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
-```
