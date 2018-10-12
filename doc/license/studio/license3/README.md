@@ -1203,7 +1203,7 @@
 - [postcss-selector-parser@2.2.3](https://github.com/postcss/postcss-selector-parser)
 - [raf@3.4.0](https://github.com/chrisdickinson/raf)
 - [align-text@0.1.4](https://github.com/jonschlinkert/align-text)
-- [atob@2.1.2](git://git.coolaj86.com/coolaj86/atob.js)
+- [atob@2.1.2](https://git.coolaj86.com/coolaj86/atob.js)
 - [ieee754@1.1.12](https://github.com/feross/ieee754)
 - [import-lazy@2.1.0](https://github.com/sindresorhus/import-lazy)
 - [is-valid-glob@0.3.0](https://github.com/jonschlinkert/is-valid-glob)
