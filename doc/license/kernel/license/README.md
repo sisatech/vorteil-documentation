@@ -1,6 +1,6 @@
 # Acceptable Use Policy
 
-Effective starting: July 1, 2017
+### Effective starting: July 1, 2017
 
 Here at Sisa-Tech, our goal is to help you and your team do the best work of your lives, every day. To do this, we need to keep our products and services running smoothly, quickly, and without distraction. For this to happen, we need help from you, our users. We need you not to misuse or abuse our products and services.
 
