@@ -2,7 +2,6 @@
 
 Effective starting: July 1, 2017
 
-```
 Here at Sisa-Tech, our goal is to help you and your team do the best work of your lives, every day. To do this, we need to keep our products and services running smoothly, quickly, and without distraction. For this to happen, we need help from you, our users. We need you not to misuse or abuse our products and services.
 
 To describe exactly what we mean by "misuse" or "abuse" - and help us identify such transgressions, and react accordingly - we've created this Acceptable Use Policy. Under this policy, we reserve the right to remove content that is inconsistent with the spirit of the guidelines, even if it's something that is not forbidden by the letter of the policy. In other words, if you do something that isn't listed here verbatim, but it looks or smells like something listed here, we may still remove it.
@@ -77,4 +76,3 @@ Could otherwise cause damage to Sisa-Tech or any third party
 In this Acceptable Use Policy, the term "content" means: (1) any information, data, text, software, code, scripts, music, sound, photos, graphics, videos, messages, tags, interactive features, or other materials that you post, upload, share, submit, or otherwise provide in any manner to the services and (2) any other materials, content, or data you provide to Sisa-Tech or use with the Services.
 
 Without affecting any other remedies available to us, Sisa-Tech may permanently or temporarily terminate or suspend a user's account or access to the services without notice or liability if Sisa-Tech (in its sole discretion) determines that a user has violated this Acceptable Use Policy.
-```

@@ -4,7 +4,7 @@ A new standard library to power a new generation of Linux-based devices. musl is
 
 https://www.musl-libc.org/
 
-```
+
 musl as a whole is licensed under the following standard MIT license:
 
 ----------------------------------------------------------------------
@@ -168,4 +168,4 @@ the files covered by the above exception were sufficiently trivial not
 to be subject to copyright, resulting in confusion over whether it
 negated the permissions granted in the license. In the spirit of
 permissive licensing, and of not having licensing issues being an
-obstacle to adoption, that text has been removed.```
+obstacle to adoption, that text has been removed.
