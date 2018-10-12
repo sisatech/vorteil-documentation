@@ -8,6 +8,9 @@ version.
 - [Packager: 2.0](../../packages/2.0)
 - [Compiler: 2.0](../../compiler/2.0)
 
+## 2.0.3 (2018-10-12)
+- Improved functionality of the 'importSharedObjects' API, which now acts recursively on any libraries that the target depends on.
+
 ## 2.0.2 (2018-10-10)
 - Modified the Cockroach service file on OSX to include the "--host" flag. This reduces the risk of any issue occuring in the case that 'localhost' can not be resolved.
 
