@@ -28,6 +28,10 @@
             "ID": 73,
             "URL": "https://vorteil.kayako.com/api/v1/categories/73"
         },
+        "license": {
+            "ID": 82,
+            "URL": "https://vorteil.kayako.com/api/v1/categories/82"
+        },
         "repository": {
             "ID": 77,
             "URL": "https://vorteil.kayako.com/api/v1/categories/77"
@@ -166,10 +170,6 @@
             "ID": 1551,
             "URL": "https://vorteil.kayako.com/api/v1/sections/1551"
         },
-        "guides/using_studio": {
-            "ID": 1552,
-            "URL": "https://vorteil.kayako.com/api/v1/sections/1552"
-        },
         "installation/hypervisors": {
             "ID": 1557,
             "URL": "https://vorteil.kayako.com/api/v1/sections/1557"
@@ -181,6 +181,22 @@
         "installation/repository": {
             "ID": 1559,
             "URL": "https://vorteil.kayako.com/api/v1/sections/1559"
+        },
+        "license/eula": {
+            "ID": 1601,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1601"
+        },
+        "license/kernel3": {
+            "ID": 1598,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1598"
+        },
+        "license/studio": {
+            "ID": 1599,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1599"
+        },
+        "license/tools": {
+            "ID": 1600,
+            "URL": "https://vorteil.kayako.com/api/v1/sections/1600"
         },
         "repository/acls": {
             "ID": 1561,
@@ -700,10 +716,6 @@
             "ID": 2427,
             "URL": "https://support.vorteil.io/article/2427"
         },
-        "getting-started/main_concepts/architecture": {
-            "ID": 2428,
-            "URL": "https://support.vorteil.io/article/2428"
-        },
         "getting-started/main_concepts/filesystem": {
             "ID": 2429,
             "URL": "https://support.vorteil.io/article/2429"
@@ -772,21 +784,13 @@
             "ID": 2449,
             "URL": "https://support.vorteil.io/article/2449"
         },
+        "guides/quickstart/using_studio": {
+            "ID": 2531,
+            "URL": "https://support.vorteil.io/article/2531"
+        },
         "guides/user_specific_installation/configuring": {
             "ID": 2441,
             "URL": "https://support.vorteil.io/article/2441"
-        },
-        "guides/using_studio/create_platform": {
-            "ID": 2442,
-            "URL": "https://support.vorteil.io/article/2442"
-        },
-        "guides/using_studio/get_project": {
-            "ID": 2443,
-            "URL": "https://support.vorteil.io/article/2443"
-        },
-        "guides/using_studio/run_application": {
-            "ID": 2444,
-            "URL": "https://support.vorteil.io/article/2444"
         },
         "installation/hypervisors/amazon_web_services": {
             "ID": 2451,
@@ -807,6 +811,46 @@
         "installation/repository/installing_the_vorteil_repository": {
             "ID": 2454,
             "URL": "https://support.vorteil.io/article/2454"
+        },
+        "license/eula/customer": {
+            "ID": 2542,
+            "URL": "https://support.vorteil.io/article/2542"
+        },
+        "license/eula/license": {
+            "ID": 2543,
+            "URL": "https://support.vorteil.io/article/2543"
+        },
+        "license/kernel3/concurrencykit": {
+            "ID": 2534,
+            "URL": "https://support.vorteil.io/article/2534"
+        },
+        "license/kernel3/freebsd": {
+            "ID": 2535,
+            "URL": "https://support.vorteil.io/article/2535"
+        },
+        "license/kernel3/musl": {
+            "ID": 2536,
+            "URL": "https://support.vorteil.io/article/2536"
+        },
+        "license/kernel3/xen": {
+            "ID": 2537,
+            "URL": "https://support.vorteil.io/article/2537"
+        },
+        "license/studio/license": {
+            "ID": 2538,
+            "URL": "https://support.vorteil.io/article/2538"
+        },
+        "license/studio/license3": {
+            "ID": 2539,
+            "URL": "https://support.vorteil.io/article/2539"
+        },
+        "license/tools/license": {
+            "ID": 2540,
+            "URL": "https://support.vorteil.io/article/2540"
+        },
+        "license/tools/license3": {
+            "ID": 2541,
+            "URL": "https://support.vorteil.io/article/2541"
         },
         "repository/acls/applying_acl_rules": {
             "ID": 2456,

@@ -1,4 +1,4 @@
-# adding a listener
+# Adding a Listener
 A listener is very easy to add to the daemon. Just head to the 'Settings' page and right down the bottom there will be a listener form. The listener form asks for the details listed below
 ```
     Name   | What the daemon can refer to the listener as.
