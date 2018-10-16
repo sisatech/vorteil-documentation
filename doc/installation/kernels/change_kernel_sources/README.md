@@ -8,15 +8,16 @@ To do this, open the Vorteil service configuration file for editing:
 - Linux: /opt/vorteil/conf/conf.toml
 
 
-If the top-level field does not already exist, add the following:
 
 ```toml
-kernel-sources = "https://downloads.vorteil.io/system"
+[kernel-sources]
+  remote-repositories = ["https://downloads.vorteil.io/system"]
 ```
 for the default behaviour, or
 
 ```toml
-kernel-sources = "https://downloads.vorteil.io/system-release-candidates"
+[kernel-sources]
+  remote-repositories = ["https://downloads.vorteil.io/system", "https://downloads.vorteil.io/system-release-candidates"]
 ```
 for the latest release candidates.
 
