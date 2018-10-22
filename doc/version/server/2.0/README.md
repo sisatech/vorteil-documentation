@@ -9,6 +9,8 @@ version.
 - [Compiler: 2.0](../../compiler/2.0)
 
 ## 2.0.4 (2018-10-22)
+- Can now build to 'xva' disks.
+- Smarter automatic disk size and inode counts. The fields can be used the same way as before, but now support a plus sign in the field to indicate that the disk should be automatically sized to have at least some amount of spare disk space. e.g. --vm.disk-size="+100 MiB". Leaving the field blank will now be equivalent to "+0 MiB", so the automatically sized disks will be as small as they can be whilst still compiling.
 - Improved 'kernel sources' logic. Now supports multiple remote kernel sources, and watching a local directory for kernels.
 - 'importSharedObjects' API now correctly imports all shared objects; previously it had not acted recursively on the direct dependencies of an app within a project.
 - Implemented a 'local' solution for database data. This means that it is no longer necessary to install Cockroach DB to run Vorteil.
@@ -17,6 +19,7 @@ version.
 - (WINDOWS) - Changed some default paths within the server config file.
 - Installer now offers a 'minimal' installation, which will exclude the Developer Studio GUI.
 - Installer can be run in 'unattended' mode by running with the "--mode unattended" flag.
+- Extended functionality of server logging; now supports log rotation.
 
 ## 2.0.3 (2018-10-12)
 - Improved functionality of the 'importSharedObjects' API, which now acts recursively on any libraries that the target depends on.
