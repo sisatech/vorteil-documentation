@@ -20,6 +20,11 @@ version.
 - Installer now offers a 'minimal' installation, which will exclude the Developer Studio GUI.
 - Installer can be run in 'unattended' mode by running with the "--mode unattended" flag.
 - Extended functionality of server logging; now supports log rotation.
+- Platform managers now check if the name exists before provisioning a new virtual machine
+- VSphere will now re-authenicate if it times out
+- GCP Platform Manager now restores the temp directory correctly
+- Fixed a bug that occured when a logger wasn't set for a manager
+- Improved readabilit of logs
 
 ## 2.0.3 (2018-10-12)
 - Improved functionality of the 'importSharedObjects' API, which now acts recursively on any libraries that the target depends on.
