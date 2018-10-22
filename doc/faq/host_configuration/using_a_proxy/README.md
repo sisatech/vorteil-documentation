@@ -22,16 +22,4 @@ $ service vorteil-daemon restart
 The Vorteil daemon is now configured to use the proxy information provided in the 'HTTP_PROXY' and/or 'HTTPS_PROXY' environment variables.
 
 ## Windows
-1. Select the 'Edit the system environment variables' from the Start Menu.
-
-![Edit the system environment variables](https://downloads.vorteil.io/assets/documentation/windows-proxy-01.png)
-
-2. Click on 'Environment Variables..."
-
-![Click on 'Environment Variables...'](https://downloads.vorteil.io/assets/documentation/windows-proxy-02.png)
-
-3. Add 'http_proxy' and 'https_proxy' as environment variables, using the correct proxy server URL as the value.
-
-![Add the environment variables](https://downloads.vorteil.io/assets/documentation/windows-proxy-03.png)
-
-4. Restart your machine for the changes to take effect.
+Vorteil will automatically use proxy settings defined within the registry `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings` if the values within the registry indicate that the proxy settings are currently enabled. 
