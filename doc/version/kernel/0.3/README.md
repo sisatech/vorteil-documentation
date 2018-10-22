@@ -3,6 +3,15 @@
 Changelogs, feature pipelines, and other information related to the kernel's
 version.
 
+## 0.3.2 (2018-10-22)
+- Bug fixed where POLLOUT would be unset
+- Bug fixed where poll/select system calls would delete each others notifications
+- Bug fixed where ARP logging would print random characters
+- Added "poweroff" status to Xen tools
+- Bug fixed where sockets would not be deleted in time_wait
+- Added "crash" status to Xen tools if kernel throws a panic
+- Bug fixed where sockets would not be drained and cause memory leak
+
 ## 0.3.1 (2018-10-12)
 - Ported FreeBSD network stack
 - Xen/EC2 support
