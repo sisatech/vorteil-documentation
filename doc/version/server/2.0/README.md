@@ -8,6 +8,16 @@ version.
 - [Packager: 2.0](../../packages/2.0)
 - [Compiler: 2.0](../../compiler/2.0)
 
+## 2.0.4 (2018-10-22)
+- Improved 'kernel sources' logic. Now supports multiple remote kernel sources, and watching a local directory for kernels.
+- 'importSharedObjects' API now correctly imports all shared objects; previously it had not acted recursively on the direct dependencies of an app within a project.
+- Implemented a 'local' solution for database data. This means that it is no longer necessary to install Cockroach DB to run Vorteil.
+- (WINDOWS) - Vorteil will no longer fork a process to run an instance of Cockroach DB.
+- (WINDOWS) - Now uses Internet Explorer proxy settings.
+- (WINDOWS) - Changed some default paths within the server config file.
+- Installer now offers a 'minimal' installation, which will exclude the Developer Studio GUI.
+- Installer can be run in 'unattended' mode by running with the "--mode unattended" flag.
+
 ## 2.0.3 (2018-10-12)
 - Improved functionality of the 'importSharedObjects' API, which now acts recursively on any libraries that the target depends on.
 
