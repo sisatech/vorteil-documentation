@@ -7,6 +7,5 @@ Adding and configuring a platform is easy to do, and can be done with the Comman
 Additionally, the Vorteil ecosystem supports exporting applications to multiple disk formats (such as VMDK, RAW, and OVA).
 
 ## See Also
-- [Studio Platform Details](../../../studio/platforms)
 - [CLI Run Using Platforms](../../../cli/general/run)
 - [Graphql API Help](../../../api/graphql/graphql)
