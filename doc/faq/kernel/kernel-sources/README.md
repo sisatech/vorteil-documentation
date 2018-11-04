@@ -33,4 +33,4 @@ A default Vorteil installation is configured to observe all publicly released ke
     - none
 
 ## See Also
-- [Where is the service configuration file?](../../faq/where_is_the_config)
+- [Where is the service configuration file?](../../host_configuration/where_is_the_config)
