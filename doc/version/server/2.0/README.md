@@ -8,6 +8,11 @@ version.
 - [Packager: 2.0](../../packages/2.0)
 - [Compiler: 2.0](../../compiler/2.0)
 
+## 2.0.5 (2018-11-05)
+- Changed default directory name for 'drop-path' field (within 'kernel-sources') from 'drop' to 'watch'.
+- If an error occurs while attempting to fetch kernels from a remote source, up to 5 subsequent attempts will be made.
+- (LINUX) Added 'network-online.target' as a service dependency. This ensures that the service will not attempt to perform actions such as retrieving kernels from remote sources before the network is available for use.
+
 ## 2.0.4 (2018-10-22)
 - Can now build to 'xva' disks.
 - Smarter automatic disk size and inode counts. The fields can be used the same way as before, but now support a plus sign in the field to indicate that the disk should be automatically sized to have at least some amount of spare disk space. e.g. --vm.disk-size="+100 MiB". Leaving the field blank will now be equivalent to "+0 MiB", so the automatically sized disks will be as small as they can be whilst still compiling.
