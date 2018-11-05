@@ -5,7 +5,14 @@ version.
 
 ## Relationships
 - [API: 0.1](../../api/0.1)
-
+## 2.0.5 (2018-11-5)
+- Beautifer for TOML, CSS, HTML and Javascript. Using the keybind CTRL-B when the editor is open.
+- Generic Code completion for most languages and indepth code completion for VCFG files. Using the keybind CTRL-SPACE when the editor is open.
+  
+## 2.0.2 (2018-10-10)
+- Sortable Project List
+- Multi-line comments in the editor
+  
 ## 2.0.1 (2018-09-26)
 - An issue with the projects tree on a large number of files on top level has been resolved.
 - Fixed Toast notifications to not be cut off or go off the screen while large amounts of data is shown.

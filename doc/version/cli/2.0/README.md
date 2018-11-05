@@ -8,7 +8,8 @@ version.
 
 ## 2.0.5 (2018-11-05)
 - Virtual machines being run/provisioned via the CLI will no longer had an empty 'id' field.
-
+- Added the functionality to show a VCFG file of a package. Using the command vorteil packages vcfg PACKAGE [-FLAGS].
+  
 ## 2.0.4 (2018-10-22)
 - Resolved an issue which caused port mapping information not to be displayed when running a virtual machine, even when alternative ports were chosen due to configured ports being in use.
 
