@@ -1,6 +1,6 @@
 # /api/build/(operationID)
 #### GET
-The ability to build virtual disks on command whether it is from a repository or local project setup. The current disk formats Vorteil support are OVA, RAW, GCP, VMDK and Stream-opt VMDK. The disk will be streamed back on the request.
+The ability to build virtual disks on command whether it is from a repository or local project setup. The current disk formats Vorteil supports are OVA, RAW, GCP, XVA, VMDK, and Stream-opt VMDK. The disk will be streamed back on the request.
 #### POST
 
     mutation{
