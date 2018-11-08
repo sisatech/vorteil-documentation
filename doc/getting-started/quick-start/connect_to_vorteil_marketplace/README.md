@@ -8,7 +8,7 @@ To begin interacting with the Marketplace, it is required that the connection is
 $ vorteil repositories connect marketplace https://marketplace.vorteil.io
 ```
 #### Studio
-By clicking the blue '+' icon. A modal shall appear on your screen to allow you to add a repository to connect to.
+By clicking the blue '+' icon. A modal will open, allowing you to add a repository to connect to.
 
 ![Connect Repository Image](https://storage.googleapis.com/vorteil-dl/assets/documentation/marketplace-repo.png "Connect Repository")
 
