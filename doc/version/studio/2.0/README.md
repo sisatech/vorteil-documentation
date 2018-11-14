@@ -5,6 +5,10 @@ version.
 
 ## Relationships
 - [API: 0.1](../../api/0.1)
+## 2.0.6 (2018-11-19)
+- New Administration UI default is at http://localhost:7471. Allows you to grant access to your repository.
+- Added new menu Repository-Adminstration which grants you way to generate keys and grant access to your repository
+- Renamable project list
 ## 2.0.5 (2018-11-5)
 - Beautifer for TOML, CSS, HTML and Javascript. Using the keybind CTRL-B when the editor is open.
 - Generic Code completion for most languages and indepth code completion for VCFG files. Using the keybind CTRL-SPACE when the editor is open.
