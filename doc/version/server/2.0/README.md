@@ -7,7 +7,9 @@ version.
 - [API: 0.1](../../api/0.1)
 - [Packager: 2.0](../../packages/2.0)
 - [Compiler: 2.0](../../compiler/2.0)
-
+- 
+## 2.0.7 (2018-11-19)
+- Added more logging for provisioning to Google Cloud Platform and Amazon.
 ## 2.0.5 (2018-11-05)
 - Changed default directory name for 'drop-path' field (within 'kernel-sources') from 'drop' to 'watch'.
 - If an error occurs while attempting to fetch kernels from a remote source, up to 5 subsequent attempts will be made.
