@@ -6,6 +6,8 @@ version.
 ## Relationships
 - [API: 0.1](../../api/0.1)
 
+## 2.0.7 (2018-11-19)
+- Added admin commands to the cli used to generate keys and provide access to a repository.
 ## 2.0.5 (2018-11-05)
 - Virtual machines being run/provisioned via the CLI will no longer had an empty 'id' field.
 - Added the functionality to show a VCFG file of a package. Using the command vorteil packages vcfg PACKAGE [-FLAGS].

@@ -5,7 +5,7 @@ version.
 
 ## Relationships
 - [API: 0.1](../../api/0.1)
-## 2.0.6 (2018-11-19)
+## 2.0.7 (2018-11-19)
 - New Administration UI default is at http://localhost:7471. Allows you to grant access to your repository.
 - Added new menu Repository-Adminstration which grants you way to generate keys and grant access to your repository
 - Renamable project list
