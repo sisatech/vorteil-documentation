@@ -1,15 +1,18 @@
 # CLI Changelogs
 
-Changelogs, feature pipelines, and other information related to the CLI's 
+Changelogs, feature pipelines, and other information related to the CLI's
 version.
 
 ## Relationships
 - [API: 0.1](../../api/0.1)
 
+## 2.0.7 (2018-11-19)
+- Added 'admin' subcommands, providing a vastly simplified approach to configuring access control lists and exposing the repository to external users.
+
 ## 2.0.5 (2018-11-05)
 - Virtual machines being run/provisioned via the CLI will no longer had an empty 'id' field.
 - Added the functionality to show a VCFG file of a package. Using the command vorteil packages vcfg PACKAGE [-FLAGS].
-  
+
 ## 2.0.4 (2018-10-22)
 - Resolved an issue which caused port mapping information not to be displayed when running a virtual machine, even when alternative ports were chosen due to configured ports being in use.
 
