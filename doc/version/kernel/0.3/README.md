@@ -3,6 +3,13 @@
 Changelogs, feature pipelines, and other information related to the kernel's
 version.
 
+## 0.3.3 (2018-11-26)
+- Bug fixed where EPOLLIN was not handled correctly on sockets
+- Enabled AVX
+- Bug fixed where epoll with timeout 0 would not return
+- Bug fixed in network driver ring handling
+
+
 ## 0.3.3 (2018-11-05)
 - Bug fixed where SIGTERM was not handled correctly
 - Bug fixed where memory above 3GB could not be addressed
