@@ -54,7 +54,9 @@ above example.
 ```
 
 The dns field defines the list of DNS servers the kernel should use to resolve
-domain names. Each entry in the list must be a valid IPv4 address.
+domain names. Each entry in the list must be a valid IPv4 address. If the virtual
+machine is using DHCP and DNS servers are not specified, the VM uses DNS servers
+provided by the DHCP server.
 
 ### hostname
 
