@@ -3,7 +3,19 @@
 Changelogs, feature pipelines, and other information related to the kernel's
 version.
 
-## 0.3.3 (2018-11-26)
+## 0.3.6 (2019-02-14)
+ - Fixed issue in signals
+ - Fixed problem when caching large disks
+ - Fixed NTP whith negative time adjustments
+ - Added functionality to get DNS from DHCP
+ - Multiple filesystem fixes
+ - Display default gateway
+
+## 0.3.5 (2018-12-08)
+ - Added flexible /etc/hosts
+ - Added network routing
+
+## 0.3.4 (2018-11-26)
 - Bug fixed where EPOLLIN was not handled correctly on sockets
 - Enabled AVX
 - Bug fixed where epoll with timeout 0 would not return
